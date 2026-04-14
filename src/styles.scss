@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'tailwindcss';
+@use 'tailwindcss/utilities';
+
+@use 'fonts';
+
+body {
+  @apply text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
+
