@@ -1,0 +1,5 @@
+{
+  "/wp-json/wp/v2/posts": "/posts",
+  "/wp-json/wp/v2/destinations": "/destinations",
+  "/wp-json/wp/v2/media": "/media"
+}
