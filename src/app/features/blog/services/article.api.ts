@@ -36,7 +36,8 @@ export class ArticleApi {
 
   getArticleBySlug(slug: string) {
     return this.wp.getPostBySlug(slug).pipe(
-      switchMap((item) => {
+      switchMap((items) => {
+        let item = items[0];
         const mediaId = item.featured_media;
         if (!mediaId) {
           return [mapWpPostWithMedia(mediaId)];
