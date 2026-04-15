@@ -10,7 +10,7 @@ server.use(jsonServer.bodyParser);
 server.get('/wp-json/wp/v2/posts', (req, res) => {
   const db = router.db;
   let items = db.get('posts').value();
-  if (ref.query.slug) {
+  if (req.query.slug) {
     items = items.filter(item => item.slug === req.query.slug);
   }
   res.jsonp(items);
@@ -40,3 +40,4 @@ server.use(router);
 server.listen(3000, () => {
   console.log('JSON Server is running on http://localhost:3000');
 });
+
