@@ -1,6 +1,6 @@
 <a class="block overflow-hidden rounded-2xl border bg-white shadow-sm hover:shadow-md transition" [routerLink]="['/blog', post().slug]">
   @if (post().cover_image_url) {
-    <img class="object-cover w-full h-48" [src]="post().cover_image_url" alt="{{ post().title }}">
+    <img class="object-cover w-full h-48" [src]="post().cover_image_url" [lazy]="post().cover_image_url!" alt="{{ post().title }}">
   } @else {
     <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700"></div>
   }
