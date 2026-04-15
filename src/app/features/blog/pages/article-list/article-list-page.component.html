@@ -1,1 +1,17 @@
-<p>article-list-page.component works!</p>
+<section class="space-y-6">
+  <div class="space-y-2">
+    <app-article-hero [title]="'Blog'"/>
+
+    @if (store.loading()) {
+      <p>loading...</p>
+    } @else if (!store.articles().length) {
+      <p>No post found.</p>
+    } @else {
+      <div class="grid grid-cols-2 gap-4">
+        @for (item of store.articles(); track item.id) {
+          <app-article-card [post]="item" />
+        }
+      </div>
+    }
+  </div>
+</section>
