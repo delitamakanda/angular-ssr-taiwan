@@ -7,7 +7,7 @@ export function mapWpDestinationWithMedia(item: any, media?: Media): Destination
     slug: item.slug,
     name: item.title.rendered,
     excerpt: item.excerpt.rendered,
-    destination: item.content.rendered,
+    description: item.content.rendered,
     cover_image_url: media?.url,
     gallery: item.acf.gallery ?? [],
     region: item.acf.region ?? undefined,

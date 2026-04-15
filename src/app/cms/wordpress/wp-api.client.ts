@@ -50,12 +50,12 @@ export class WordpressApiClient {
     return this.http.get<WpPost[]>(`${this.wpApiUrl}${WP_ENDPOINTS.posts}`);
   }
 
-  getPostBySlug(slug: string): Observable<WpPost> {
-    return this.http.get<WpPost>(`${this.wpApiUrl}${WP_ENDPOINTS.posts}?slug=${encodeURIComponent(slug)}`);
+  getPostBySlug(slug: string): Observable<WpPost[]> {
+    return this.http.get<WpPost[]>(`${this.wpApiUrl}${WP_ENDPOINTS.posts}?slug=${encodeURIComponent(slug)}`);
   }
 
-  getDestinationBySlug(slug: string): Observable<WpDestination> {
-    return this.http.get<WpDestination>(
+  getDestinationBySlug(slug: string): Observable<WpDestination[]> {
+    return this.http.get<WpDestination[]>(
       `${this.wpApiUrl}${WP_ENDPOINTS.destinations}?slug=${encodeURIComponent(slug)}`,
     );
   }

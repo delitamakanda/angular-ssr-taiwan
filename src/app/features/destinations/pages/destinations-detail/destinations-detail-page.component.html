@@ -1,1 +1,112 @@
-<p>destinations-detail-page.component works!</p>
+<section class="space-y-8">
+  <a
+    routerLink="/destinations"
+    class="inline-flex items-center text-sm text-gray-600 hover:text-black"
+  >
+    < Retour aux destinations
+  </a>
+
+  @if (store.loading()) {
+    <div class="space-y-4">
+      <div class="h-80 w-full rounded-3xl bg-gray-200 animate-pulse"></div>
+      <div class="h-8 w-1/3 rounded bg-gray-200 animate-pulse"></div>
+      <div class="h-4 w-2/3 rounded bg-gray-200 animate-pulse"></div>
+      <div class="h-4 w-full rounded bg-gray-200 animate-pulse"></div>
+      <div class="h-4 w-full rounded bg-gray-200 animate-pulse"></div>
+    </div>
+  } @else if (store.error()) {
+    <div class="rounded-2xl border border-red-200 bg-red-50 p-6 text-red-700">
+      {{ store.error() }}
+    </div>
+  } @else if (destination(); as item) {
+    <article class="space-y-8">
+      <header class="space-y-6">
+        @if (item.cover_image_url) {
+          <img
+            [src]="item.cover_image_url"
+            [alt]="item.name"
+            class="h-[420px] w-full rounded-3xl object-cover"
+          />
+        } @else {
+          <div class="h-[420px] w-full rounded-3xl bg-gray-200"></div>
+        }
+
+        <div class="space-y-4">
+          <div class="flex flex-wrap items-center gap-3">
+            <h1 class="text-4xl font-bold tracking-tight">
+              {{ item.name }}
+            </h1>
+
+            @if (item.featured) {
+              <span class="rounded-full bg-black px-3 py-1 text-xs font-medium text-white">
+                    Incontournable
+                  </span>
+            }
+          </div>
+
+          @if (item.region) {
+            <p class="text-sm uppercase tracking-wide text-gray-500">
+              {{ item.region }}
+            </p>
+          }
+
+          @if (item.excerpt) {
+            <p class="max-w-3xl text-lg text-gray-600">
+              {{ item.excerpt | stripHtml }}
+            </p>
+          }
+        </div>
+      </header>
+
+      <section class="grid gap-8 lg:grid-cols-[2fr_1fr]">
+        <div class="space-y-6">
+          <div
+            class="prose prose-gray max-w-none"
+            [innerHTML]="item.description"
+          ></div>
+        </div>
+
+        <aside class="space-y-4 rounded-3xl border bg-gray-50 p-6">
+          <h2 class="text-lg font-semibold">Infos rapides</h2>
+
+          <div class="space-y-3 text-sm text-gray-700">
+            <div class="flex items-start justify-between gap-4">
+              <span class="text-gray-500">Région</span>
+              <span class="font-medium">{{ item.region || '—' }}</span>
+            </div>
+
+            <div class="flex items-start justify-between gap-4">
+              <span class="text-gray-500">Statut</span>
+              <span class="font-medium">
+                    {{ item.featured ? 'À ne pas manquer' : 'À découvrir' }}
+                  </span>
+            </div>
+
+            <div class="flex items-start justify-between gap-4">
+              <span class="text-gray-500">Galerie</span>
+              <span class="font-medium">
+                    {{ item.gallery.length }} image(s)
+                  </span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      @if (item.gallery.length) {
+        <section class="space-y-4">
+          <h2 class="text-2xl font-semibold">Galerie</h2>
+
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            @for (image of item.gallery; track image) {
+              <img
+                [src]="image"
+                [alt]="item.name"
+                class="h-64 w-full rounded-2xl object-cover"
+              />
+            }
+          </div>
+        </section>
+      }
+    </article>
+  }
+</section>

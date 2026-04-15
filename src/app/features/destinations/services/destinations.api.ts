@@ -36,7 +36,9 @@ export class DestinationsApi {
 
   getBySlug(slug: string) {
     return this.wp.getDestinationBySlug(slug).pipe(
-      switchMap((item) => {
+      switchMap((items) => {
+        let item = items[0];
+        console.log('item:', item);
         if (!item) {
           throw new Error('Destination not found');
         }
