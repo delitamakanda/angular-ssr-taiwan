@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { DestinationCard } from '../../components/destination-card/destination-card';
 import { DestinationStore } from '../../state/destination.store';
+import { DestinationFilter } from '../../components/destination-filter/destination-filter';
 
 @Component({
   selector: 'app-destinations-list-page.component',
-  imports: [DestinationCard],
+  imports: [DestinationCard, DestinationFilter],
   providers: [DestinationStore],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -18,8 +19,7 @@ export class DestinationsListPageComponent {
     this.store.loadDestinations();
   }
 
-  onSearch(event: Event): void {
-    const target = event.target as HTMLInputElement;
-    this.store.setSearchTerm(target.value);
+  onSearch(term: string): void {
+    this.store.setSearchTerm(term);
   }
 }
