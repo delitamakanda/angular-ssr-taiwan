@@ -1,0 +1,24 @@
+<a class="block overflow-hidden rounded-2xl border bg-white shadow-sm hover:shadow-md transition" [routerLink]="['/destinations', destination().slug]">
+  @if (destination().cover_image_url) {
+    <img class="object-cover w-full h-48" [src]="destination().cover_image_url" alt="{{ destination().name }}">
+  } @else {
+    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700"></div>
+  }
+
+  <div class="p-4 space-y-2">
+    <div class="flex items-center justify-between gap-3">
+      <h2 class="lg font-bold">{{ destination().name }}</h2>
+
+      @if (destination().featured) {
+        <span class="rounded-full bg-black px-2 py-1 text-xs text-white">featured</span>
+      }
+    </div>
+    @if (destination().region) {
+      <p class="text-sm text-gray-600">{{ destination().region }}</p>
+    }
+    <p class="text-sm text-gray-600">
+      {{ destination().excerpt | stripHtml }}
+    </p>
+  </div>
+</a>
+
