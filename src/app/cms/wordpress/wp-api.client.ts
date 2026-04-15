@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { WP_ENDPOINTS } from './wp-endpoints';
-import { environment } from '../../../environments/environment';
+import { API_CONFIG_TOKEN } from '../../core/config/injection-token';
 
 export interface WpRenderedField {
   rendered: string;
@@ -44,27 +44,31 @@ export interface WpDestination {
 })
 export class WordpressApiClient {
   private readonly http = inject(HttpClient);
-  private readonly wpApiUrl = environment.wordpressApiUrl;
+  private readonly config = inject(API_CONFIG_TOKEN);
 
   getPosts(): Observable<WpPost[]> {
-    return this.http.get<WpPost[]>(`${this.wpApiUrl}${WP_ENDPOINTS.posts}`);
+    return this.http.get<WpPost[]>(`${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.posts}`);
   }
 
   getPostBySlug(slug: string): Observable<WpPost[]> {
-    return this.http.get<WpPost[]>(`${this.wpApiUrl}${WP_ENDPOINTS.posts}?slug=${encodeURIComponent(slug)}`);
+    return this.http.get<WpPost[]>(
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.posts}?slug=${encodeURIComponent(slug)}`,
+    );
   }
 
   getDestinationBySlug(slug: string): Observable<WpDestination[]> {
     return this.http.get<WpDestination[]>(
-      `${this.wpApiUrl}${WP_ENDPOINTS.destinations}?slug=${encodeURIComponent(slug)}`,
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.destinations}?slug=${encodeURIComponent(slug)}`,
     );
   }
 
   getDestinations(): Observable<WpDestination[]> {
-    return this.http.get<WpDestination[]>(`${this.wpApiUrl}${WP_ENDPOINTS.destinations}`);
+    return this.http.get<WpDestination[]>(
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.destinations}`,
+    );
   }
 
   getMediaById(id: number): Observable<WpMedia> {
-    return this.http.get<WpMedia>(`${this.wpApiUrl}${WP_ENDPOINTS.media}/${id}`);
+    return this.http.get<WpMedia>(`${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.media}/${id}`);
   }
 }
