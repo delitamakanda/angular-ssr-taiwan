@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { DestinationCard } from '../../components/destination-card/destination-card';
 import { DestinationStore } from '../../state/destination.store';
 import { DestinationFilter } from '../../components/destination-filter/destination-filter';
+import { SeoService } from '../../../../core/seo/seo.service';
 
 @Component({
   selector: 'app-destinations-list-page.component',
@@ -14,9 +15,15 @@ import { DestinationFilter } from '../../components/destination-filter/destinati
 })
 export class DestinationsListPageComponent {
   readonly store = inject(DestinationStore);
+  private readonly seo = inject(SeoService);
 
   constructor() {
     this.store.loadDestinations();
+    this.seo.update({
+      title: 'Discover Our Destinations',
+      description: 'Our diverse range of destinations for you to explore',
+      canonical_url: `${location.origin}/destinations`,
+    })
   }
 
   onSearch(term: string): void {
