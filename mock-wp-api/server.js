@@ -43,6 +43,9 @@ server.get('/wp-json/wp/v2/pages', (req, res) => {
   if (req.query.slug) {
     items = items.filter(item => item.slug === req.query.slug);
   }
+  if (req.query.template) {
+    items = items.filter(item => item.template === req.query.template);
+  }
   res.jsonp(items);
 })
 
