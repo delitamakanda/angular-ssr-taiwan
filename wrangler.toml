@@ -1,6 +1,6 @@
 name = "taiwan-travel"
 main = "worker/index.ts"
-compatibilty_date = "2026-04-16"
+compatibility_date = "2026-04-16"
 
 [assets]
 directory = "./dist/angular-ssr-taiwan"
