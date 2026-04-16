@@ -284,6 +284,13 @@ export default {
       }
       return json(item);
     }
-    return env.ASSETS.fetch(request);
+    const assetResponse = await env.ASSETS.fetch(request);
+
+    if (assetResponse.status !== 404) {
+      return assetResponse;
+    }
+
+    // fallback to spa
+    return env.ASSETS.fetch(new Request(new URL('/index.html', window.location.origin).toString(), request));
   },
 };
