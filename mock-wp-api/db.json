@@ -95,6 +95,59 @@
       }
     }
   ],
+  "pages": [
+    {
+      "id": 4,
+      "slug": "about-taiwan",
+      "title": { "rendered": "About Taiwan" },
+      "excerpt": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
+      "content": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
+      "template": "pratical-info"
+    },
+    {
+      "id": 20,
+      "slug": "weather",
+      "title": { "rendered": "Weather" },
+      "excerpt": { "rendered": "<p>Check out the weather forecast for Taiwan.</p>" },
+      "content": { "rendered": "<p>Check out the weather forecast for Taiwan.</p>" },
+      "featured_media": 7,
+      "template": "practical-info"
+    },
+    {
+      "id": 21,
+      "slug": "visa",
+      "title": { "rendered": "Visa" },
+      "excerpt": { "rendered": "<p>Check out the visa requirements for Taiwan.</p>" },
+      "content": { "rendered": "<p>Check out the visa requirements for Taiwan.</p>" },
+      "featured_media": 8,
+      "template": "practical-info"
+    },
+    {
+      "id": 22,
+      "slug": "transportation",
+      "title": { "rendered": "Transportation" },
+      "excerpt": { "rendered": "<p>Check out the transportation options in Taiwan.</p>" },
+      "content": { "rendered": "<p>Check out the transportation options in Taiwan.</p>" },
+      "featured_media": 9,
+      "template": "practical-info"
+    },
+    {
+      "id": 23,
+      "slug": "culture",
+      "title": { "rendered": "Culture" },
+      "excerpt": { "rendered": "<p>Check out the cultural experiences in Taiwan.</p>" },
+      "content": { "rendered": "<p>Check out the cultural experiences in Taiwan.</p>" },
+      "template": "practical-info"
+    },
+    {
+      "id": 24,
+      "slug": "accommodation",
+      "title": { "rendered": "Accommodation" },
+      "excerpt": { "rendered": "<p>Check out the accommodation options in Taiwan.</p>" },
+      "content": { "rendered": "<p>Check out the accommodation options in Taiwan.</p>" },
+      "template": "practical-info"
+    }
+  ],
   "media": [
     {
       "id": 1,
@@ -125,6 +178,21 @@
       "id": 6,
       "source_url": "https://peakvisor.com/photo/SD/Hualien-County-Taiwan-Suhua-Highway.jpg",
       "alt_text": "Vue de Hualien Taiwan"
+    },
+    {
+      "id": 7,
+      "source_url": "https://images.unsplash.com/photo-1601823984263-b87b59798b70",
+      "alt_text": "Weather Taiwan"
+    },
+    {
+      "id": 8,
+      "source_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec",
+      "alt_text": "Passeport and visa"
+    },
+    {
+      "id": 9,
+      "source_url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
+      "alt_text": "Transportation Taiwan"
     }
   ]
 }

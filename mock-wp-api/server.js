@@ -36,6 +36,16 @@ server.get('/wp-json/wp/v2/media/:id', (req, res) => {
   res.jsonp(items);
 })
 
+// pages
+server.get('/wp-json/wp/v2/pages', (req, res) => {
+  const db = router.db;
+  let items = db.get('pages').value();
+  if (req.query.slug) {
+    items = items.filter(item => item.slug === req.query.slug);
+  }
+  res.jsonp(items);
+})
+
 server.use(router);
 server.listen(3000, () => {
   console.log('JSON Server is running on http://localhost:3000');
