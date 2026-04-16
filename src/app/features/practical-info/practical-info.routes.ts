@@ -4,8 +4,8 @@ export const PRACTICAL_INFO_ROUTES: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./pages/practical-info-page.component').then(
-        (m) => m.PracticalInfoPageComponent,
+      import('./layouts/practical-info-layout.component').then(
+        (m) => m.PracticalInfoLayoutComponent,
       ),
   },
 ];
