@@ -39,6 +39,16 @@ export interface WpDestination {
   acf: WpAcf;
 }
 
+export interface WpPage {
+  id: number;
+  slug: string;
+  title: WpRenderedField;
+  excerpt: WpRenderedField;
+  content: WpRenderedField;
+  featured_media?: number;
+  template?: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -66,6 +76,19 @@ export class WordpressApiClient {
     return this.http.get<WpDestination[]>(
       `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.destinations}`,
     );
+  }
+
+  getPageBySlug(slug: string): Observable<WpPage[]> {
+    return this.http.get<WpPage[]>(`${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.pages}?slug=${encodeURIComponent(slug)}`,);
+  }
+  getPageByTemplate(template: string): Observable<WpPage[]> {
+    return this.http.get<WpPage[]>(
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.pages}?template=${encodeURIComponent(template)}}`,
+    );
+  }
+
+  getPage(): Observable<WpPage[]> {
+    return this.http.get<WpPage[]>(`${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.pages}`);
   }
 
   getMediaById(id: number): Observable<WpMedia> {
