@@ -290,6 +290,6 @@ export default {
       return assetResponse;
     }
 
-    return env.ASSETS.fetch(new Request(new URL('/', url.origin).toString(), request));
+    return env.ASSETS.fetch(new Request(new URL('index.csr.html', url.origin).toString(), request));
   },
 };
