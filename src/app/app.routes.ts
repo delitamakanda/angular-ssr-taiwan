@@ -15,7 +15,7 @@ export const routes: Routes = [
   },
   {
     path: 'practical-info',
-    loadChildren: () => import('./features/pratical-info/practical-info.routes').then(m => m.PRACTICAL_INFO_ROUTES)
+    loadChildren: () => import('./features/practical-info/practical-info.routes').then(m => m.PRACTICAL_INFO_ROUTES)
   },
   {
     path: 'contact',
