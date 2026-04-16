@@ -247,7 +247,7 @@ export default {
       if (slug) {
         items = items.filter((post: any) => post.slug === slug);
       }
-      return json(items[0]);
+      return json(items);
     }
 
     // destinations
@@ -258,7 +258,7 @@ export default {
       if (slug) {
         items = items.filter((destination: any) => destination.slug === slug);
       }
-      return json(items[0]);
+      return json(items);
     }
 
     // pages
@@ -272,7 +272,7 @@ export default {
       if (template) {
         items = items.filter((page: any) => page.template === template);
       }
-      return json(items[0]);
+      return json(items);
     }
 
     // media
@@ -290,6 +290,6 @@ export default {
       return assetResponse;
     }
 
-    return env.ASSETS.fetch(new Request(new URL('/index.csr.html', url.origin).toString(), request));
+    return env.ASSETS.fetch(new Request(new URL('/', url.origin).toString(), request));
   },
 };
