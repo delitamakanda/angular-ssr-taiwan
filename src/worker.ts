@@ -1,3 +1,5 @@
+import {AngularAppEngine, createRequestHandler } from '@angular/ssr';
+
 export const db = {
   posts: [
     {
@@ -235,14 +237,16 @@ function notFound(message = 'Not found'): Response {
   return json({ error: { message } }, 404);
 }
 
-export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+const angularApp = new AngularAppEngine();
+
+
+async function handleMockApi(request: Request): Promise<Response | null> {
     const url = new URL(request.url);
     const { pathname, searchParams } = url;
 
     // posts
     if (pathname === '/wp-json/wp/v2/posts') {
-      let items = [db.posts];
+      let items = [...db.posts];
       const slug = searchParams.get('slug');
       if (slug) {
         items = items.filter((post: any) => post.slug === slug);
@@ -253,7 +257,7 @@ export default {
     // destinations
 
     if (pathname === '/wp-json/wp/v2/destinations') {
-      let items = [db.destinations];
+      let items = [...db.destinations];
       const slug = searchParams.get('slug');
       if (slug) {
         items = items.filter((destination: any) => destination.slug === slug);
@@ -263,7 +267,7 @@ export default {
 
     // pages
     if (pathname === '/wp-json/wp/v2/pages') {
-      let items = [db.pages];
+      let items = [...db.pages];
       const slug = searchParams.get('slug');
       const template = searchParams.get('template');
       if (slug) {
@@ -285,6 +289,33 @@ export default {
       return json(item);
     }
 
+    return null;
+  }
+
+const reqHandler = createRequestHandler((request: Request) => {
+  return angularApp.handle(request)
+});
+
+type ExecutionContext = {
+  waitUntil(promise: Promise<any>): Promise<void>;
+  passThroughOnException(): void;
+}
+
+export default {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    const url = new URL(request.url);
+
+    const mockResponse = await handleMockApi(request);
+    if (mockResponse) {
+      return mockResponse;
+    }
+
+    const ssrResponse = await reqHandler(request);
+    if (ssrResponse) {
+      return ssrResponse;
+    }
+
     return env.ASSETS.fetch(request);
-  },
-};
+  }
+}
+

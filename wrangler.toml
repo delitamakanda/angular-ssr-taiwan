@@ -3,6 +3,21 @@ main = "worker/index.ts"
 compatibility_date = "2026-04-16"
 
 [assets]
-directory = "./dist/angular-ssr-taiwan"
+directory = "./dist/angular-ssr-taiwan/browser"
 binding = "ASSETS"
-run_worker_first = ["/wp-json/*"]
+run_worker_first = true
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+persist = true
+head_sampling_rate = 1
