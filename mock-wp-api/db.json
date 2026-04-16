@@ -14,7 +14,7 @@
       "id": 10,
       "slug": "taipei",
       "title": { "rendered": "Taipei" },
-      "excerpt": { "rendered": "<p>Taipei City is the capital of Taiwan and the most populous city in the world.</p>" },
+      "excerpt": { "rendered": "<p>Taipei mêle temples, cafés modernes, marchés de nuit et montagnes accessibles en métro.</p>" },
       "content": { "rendered": "<p>Taipei City is the capital of Taiwan and the most populous city in the world.</p>" },
       "featured_media": 1,
       "acf": {
@@ -30,7 +30,7 @@
       "id": 11,
       "slug": "kaohsiung",
       "title": { "rendered": "Kaohsiung" },
-      "excerpt": { "rendered": "<p>Kaohsiung is the capital and most populous city of Taiwan.</p>" },
+      "excerpt": { "rendered": "<p>Kaohsiung séduit par son port, son art urbain, ses temples et son ambiance détendue au sud de Taïwan.</p>" },
       "content": { "rendered": "<p>Kaohsiung is the capital and most populous city of Taiwan.</p>" },
       "featured_media": 5,
       "acf": {
@@ -46,7 +46,7 @@
       "id": 12,
       "slug": "hualien",
       "title": { "rendered": "Hualien" },
-      "excerpt": { "rendered": "<p>Hualien is the capital and most populous city of Taiwan.</p>" },
+      "excerpt": { "rendered": "<p>Hualien est une porte d’entrée idéale vers les paysages spectaculaires de la côte est et les gorges de Taroko.</p>" },
       "content": { "rendered": "<p>Hualien is the capital and most populous city of Taiwan.</p>" },
       "featured_media": 5,
       "acf": {
@@ -102,7 +102,7 @@
       "title": { "rendered": "About Taiwan" },
       "excerpt": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
       "content": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
-      "template": "pratical-info"
+      "template": "practical-info"
     },
     {
       "id": 20,
