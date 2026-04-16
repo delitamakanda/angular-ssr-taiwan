@@ -3,6 +3,7 @@ import { DestinationCard } from '../../components/destination-card/destination-c
 import { DestinationStore } from '../../state/destination.store';
 import { DestinationFilter } from '../../components/destination-filter/destination-filter';
 import { SeoService } from '../../../../core/seo/seo.service';
+import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
   selector: 'app-destinations-list-page.component',
@@ -22,7 +23,7 @@ export class DestinationsListPageComponent {
     this.seo.update({
       title: 'Discover Our Destinations',
       description: 'Our diverse range of destinations for you to explore',
-      canonical_url: `${location.origin}/destinations`,
+      canonical_url: `${SITE_CONFIG.site_url}/destinations`,
     })
   }
 
