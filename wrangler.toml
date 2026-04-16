@@ -4,3 +4,5 @@ compatibilty_date = "2026-04-16"
 
 [assets]
 directory = "./dist/angular-ssr-taiwan"
+binding = "ASSETS"
+run_worker_first = ["/wp-json/*"]
