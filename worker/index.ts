@@ -247,7 +247,7 @@ export default {
       if (slug) {
         items = items.filter((post: any) => post.slug === slug);
       }
-      return json(items);
+      return json(items[0]);
     }
 
     // destinations
@@ -258,7 +258,7 @@ export default {
       if (slug) {
         items = items.filter((destination: any) => destination.slug === slug);
       }
-      return json(items);
+      return json(items[0]);
     }
 
     // pages
@@ -272,7 +272,7 @@ export default {
       if (template) {
         items = items.filter((page: any) => page.template === template);
       }
-      return json(items);
+      return json(items[0]);
     }
 
     // media
