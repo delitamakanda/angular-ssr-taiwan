@@ -4,6 +4,7 @@ import { DestinationDetailStore } from '../../state/destination-detail.store';
 import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { stripHtml } from '../../../../shared/utils/strip-html.util';
+import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
   selector: 'app-destinations-detail-page.component',
@@ -38,7 +39,7 @@ export class DestinationsDetailPageComponent {
         title: item.name,
         description: description,
         image: item.cover_image_url,
-        canonical_url: `${window.location.origin}/destinations/${slug}`,
+        canonical_url: `${SITE_CONFIG.site_url}/destinations/${slug}`,
       })
     });
   }

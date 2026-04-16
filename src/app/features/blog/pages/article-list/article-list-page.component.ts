@@ -3,6 +3,7 @@ import { ArticleHero } from '../../components/article-hero/article-hero';
 import { ArticleCard } from '../../components/article-card/article-card';
 import { ArticleStore } from '../../state/article.store';
 import { SeoService } from '../../../../core/seo/seo.service';
+import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
   selector: 'app-article-list',
@@ -22,7 +23,7 @@ export class ArticleListPageComponent {
     this.seo.update({
       title: 'Latest Articles',
       description: 'Discover the latest news articles from around the world.',
-      canonical_url: `${window.location.origin}}/blog`,
+      canonical_url: `${SITE_CONFIG.site_url}/blog`,
     })
   }
 }

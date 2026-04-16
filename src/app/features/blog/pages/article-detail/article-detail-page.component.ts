@@ -4,6 +4,7 @@ import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
 import { ArticleDetailStore } from '../../state/article-detail';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { stripHtml } from '../../../../shared/utils/strip-html.util';
+import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
   selector: 'app-article-detail',
@@ -38,7 +39,7 @@ export class ArticleDetailPageComponent {
         title: item.title,
         description: description,
         image: item.cover_image_url,
-        canonical_url: `${window.location.origin}/blog/${slug}`,
+        canonical_url: `${SITE_CONFIG.site_url}/blog/${slug}`,
         type: 'article',
       });
     });
