@@ -291,6 +291,6 @@ export default {
     }
 
     // fallback to spa
-    return env.ASSETS.fetch(new Request(new URL('/index.html', window.location.origin).toString(), request));
+    return env.ASSETS.fetch(new Request(new URL('/index.html', url.origin).toString(), request));
   },
 };
