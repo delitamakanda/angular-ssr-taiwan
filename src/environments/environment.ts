@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  wordpressApiUrl: '/wp-json/wp/v2',
+  wordpressApiUrl: 'https://taiwan-mock-api-946790860424.europe-west9.run.app/wp-json/wp/v2',
 };
