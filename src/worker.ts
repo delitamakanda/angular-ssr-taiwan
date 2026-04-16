@@ -310,11 +310,6 @@ export default {
       return mockResponse;
     }
 
-    const assetResponse = await env.ASSETS.fetch(request);
-    if (assetResponse.status !== 404 && !url.pathname.endsWith('/')) {
-      return assetResponse;
-    }
-
     const ssrResponse = await reqHandler(request);
     if (ssrResponse) {
       return ssrResponse;
