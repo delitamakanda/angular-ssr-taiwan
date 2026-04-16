@@ -1,198 +1,524 @@
 {
   "posts": [
     {
-      "id": 9,
+      "id": 1,
       "slug": "taiwan-travel-blog",
-      "title": { "rendered": "Taiwan Travel Blog" },
-      "excerpt": { "rendered": "<p>Discover the beauty of Taiwan in our blog.</p>" },
-      "content": { "rendered": "<p>Discover the beauty of Taiwan in our blog.</p>" },
-      "featured_media": 3
+      "title": {
+        "rendered": "Taiwan Travel Blog"
+      },
+      "excerpt": {
+        "rendered": "<p>Un blog de démonstration consacré à Taïwan, entre grandes villes, nature, culture et conseils pratiques.</p>"
+      },
+      "content": {
+        "rendered": "<p>Bienvenue sur ce blog de démonstration dédié à Taïwan. L’objectif est simple : proposer un contenu crédible, agréable à parcourir et suffisamment riche pour tester une application Angular SSR avec pages, destinations, médias et sections pratiques.</p><p>Vous y trouverez des idées de villes à explorer, des inspirations de voyage et des informations utiles pour préparer un séjour entre modernité urbaine, marchés de nuit, temples, randonnées et côtes spectaculaires.</p>"
+      },
+      "featured_media": 10
+    },
+    {
+      "id": 2,
+      "slug": "7-jours-a-taiwan",
+      "title": {
+        "rendered": "Idée d’itinéraire : 7 jours à Taïwan"
+      },
+      "excerpt": {
+        "rendered": "<p>Une semaine pour découvrir Taipei, Taichung, Tainan et Kaohsiung sans courir comme un poulet sans tête.</p>"
+      },
+      "content": {
+        "rendered": "<p>Pour une première découverte, un itinéraire d’une semaine permet de combiner plusieurs ambiances : Taipei pour l’énergie urbaine, Taichung pour ses quartiers créatifs, Tainan pour l’histoire et la gastronomie, puis Kaohsiung pour une fin de séjour plus détendue entre art, front de mer et temples.</p><p>Ce format fonctionne bien pour une démo car il permet d’alimenter une page éditoriale avec du contenu plus long et de relier les destinations entre elles.</p>"
+      },
+      "featured_media": 5
     }
   ],
   "destinations": [
     {
       "id": 10,
       "slug": "taipei",
-      "title": { "rendered": "Taipei" },
-      "excerpt": { "rendered": "<p>Taipei mêle temples, cafés modernes, marchés de nuit et montagnes accessibles en métro.</p>" },
-      "content": { "rendered": "<p>Taipei City is the capital of Taiwan and the most populous city in the world.</p>" },
+      "title": {
+        "rendered": "Taipei"
+      },
+      "excerpt": {
+        "rendered": "<p>Taipei mêle temples, cafés modernes, marchés de nuit et montagnes accessibles en métro.</p>"
+      },
+      "content": {
+        "rendered": "<p>Capitale de Taïwan, Taipei est souvent la porte d’entrée idéale pour un premier voyage. La ville combine une scène culinaire très vivante, des quartiers modernes, des temples historiques et un accès rapide à la nature. On peut passer de ruelles animées à un sentier de randonnée en très peu de temps, ce qui en fait une destination particulièrement agréable pour une escapade urbaine.</p><p>Entre Taipei 101, les marchés de nuit, les bains thermaux de Beitou et les collines de Elephant Mountain, la ville offre un bon équilibre entre culture, gastronomie et panoramas.</p>"
+      },
       "featured_media": 1,
       "acf": {
         "region": "north",
         "featured": true,
         "gallery": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGc_5niYCFjHkoAYKGf_4QsGNchIkUOhi6Q&s",
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmWxPr1B7KWQgIE6ClvBs26_3w4FlagxHV7A&s"
+          "https://images.unsplash.com/photo-1652005344332-7c6855835a9a",
+          "https://images.unsplash.com/photo-1528164344705-47542687000d"
+        ],
+        "best_for": [
+          "city-break",
+          "food",
+          "culture",
+          "hiking"
+        ],
+        "days_recommended": 3,
+        "tags": [
+          "marchés de nuit",
+          "temples",
+          "cafés",
+          "montagne"
         ]
       }
     },
     {
       "id": 11,
       "slug": "kaohsiung",
-      "title": { "rendered": "Kaohsiung" },
-      "excerpt": { "rendered": "<p>Kaohsiung séduit par son port, son art urbain, ses temples et son ambiance détendue au sud de Taïwan.</p>" },
-      "content": { "rendered": "<p>Kaohsiung is the capital and most populous city of Taiwan.</p>" },
-      "featured_media": 5,
+      "title": {
+        "rendered": "Kaohsiung"
+      },
+      "excerpt": {
+        "rendered": "<p>Kaohsiung séduit par son port, son art urbain, ses temples et son ambiance détendue au sud de Taïwan.</p>"
+      },
+      "content": {
+        "rendered": "<p>Grande ville du sud, Kaohsiung offre une atmosphère plus relax que Taipei tout en restant dynamique. Son front de mer, ses espaces artistiques, ses lignes de métro pratiques et ses grands temples en font une destination agréable à découvrir sur plusieurs jours.</p><p>La ville constitue aussi une excellente base pour explorer le sud de l’île, faire une excursion vers Tainan ou profiter de promenades entre port, ferries, îlots voisins et points de vue urbains.</p>"
+      },
+      "featured_media": 2,
       "acf": {
         "region": "south",
-        "featured": false,
+        "featured": true,
         "gallery": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGc_5niYCFjHkoAYKGf_4QsGNchIkUOhi6Q&s",
-          "https://worldwildbrice.net/wp-content/uploads/2019/03/kaohsiung-taiwan.jpg"
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "best_for": [
+          "art",
+          "waterfront",
+          "temples",
+          "slow-travel"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "port",
+          "art urbain",
+          "temples",
+          "sud"
         ]
       }
     },
     {
       "id": 12,
       "slug": "hualien",
-      "title": { "rendered": "Hualien" },
-      "excerpt": { "rendered": "<p>Hualien est une porte d’entrée idéale vers les paysages spectaculaires de la côte est et les gorges de Taroko.</p>" },
-      "content": { "rendered": "<p>Hualien is the capital and most populous city of Taiwan.</p>" },
-      "featured_media": 6,
+      "title": {
+        "rendered": "Hualien"
+      },
+      "excerpt": {
+        "rendered": "<p>Hualien est une bonne porte d’entrée vers la côte est, entre montagnes, océan et paysages spectaculaires.</p>"
+      },
+      "content": {
+        "rendered": "<p>Située sur la côte est, Hualien attire les voyageurs en quête de nature, de vues maritimes et d’un rythme plus calme. La ville elle-même est agréable pour une halte, mais c’est surtout sa situation qui la rend précieuse dans un itinéraire à Taïwan.</p><p>Elle permet de découvrir une autre facette de l’île, plus ouverte sur l’océan Pacifique, avec des routes panoramiques, des falaises, des points de vue impressionnants et une ambiance plus paisible que dans les grandes métropoles de l’ouest.</p>"
+      },
+      "featured_media": 3,
       "acf": {
         "region": "east",
         "featured": false,
         "gallery": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGc_5niYCFjHkoAYKGf_4QsGNchIkUOhi6Q&s",
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_bmSmCVnP0HDz-isEgM7qo3StXNki-kw2bw&s"
+          "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+          "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+        ],
+        "best_for": [
+          "nature",
+          "coast",
+          "scenic-train",
+          "road-trip"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "côte est",
+          "océan",
+          "falaises",
+          "nature"
         ]
       }
     },
     {
       "id": 13,
       "slug": "tainan",
-      "title": { "rendered": "Tainan" },
-      "excerpt": { "rendered": "<p>Tainan is the capital and most populous city of Taiwan.</p>" },
-      "content": { "rendered": "<p>Tainan is the capital and most populous city of Taiwan.</p>" },
-      "featured_media": 2,
+      "title": {
+        "rendered": "Tainan"
+      },
+      "excerpt": {
+        "rendered": "<p>Tainan est idéale pour découvrir le Taïwan historique, les temples et une scène food particulièrement réputée.</p>"
+      },
+      "content": {
+        "rendered": "<p>Ancienne capitale, Tainan séduit par son atmosphère plus traditionnelle, ses ruelles, ses bâtiments historiques et sa culture culinaire très forte. La ville se prête bien à un séjour lent, à pied ou à vélo, avec une succession de petites adresses, de sanctuaires et de quartiers vivants.</p><p>C’est une destination parfaite pour celles et ceux qui aiment l’histoire urbaine, la street food et les villes où l’on flâne plus qu’on ne coche des cases.</p>"
+      },
+      "featured_media": 4,
       "acf": {
-        "region": "west",
+        "region": "south",
         "featured": false,
         "gallery": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGc_5niYCFjHkoAYKGf_4QsGNchIkUOhi6Q&s"
+          "https://images.unsplash.com/photo-1494526585095-c41746248156",
+          "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+        ],
+        "best_for": [
+          "history",
+          "food",
+          "temples",
+          "walking"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "histoire",
+          "street food",
+          "temples",
+          "balade"
         ]
       }
     },
     {
       "id": 14,
       "slug": "taichung",
-      "title": { "rendered": "Taichung" },
-      "excerpt": { "rendered": "<p>Taichung is the capital and most populous city of Taiwan.</p>" },
-      "content": { "rendered": "<p>Taichung is the capital and most populous city of Taiwan.</p>" },
-      "featured_media": 3,
+      "title": {
+        "rendered": "Taichung"
+      },
+      "excerpt": {
+        "rendered": "<p>Taichung combine quartiers créatifs, cafés, marchés de nuit et escapades faciles dans le centre de l’île.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taichung est souvent choisie comme étape confortable entre le nord et le sud. La ville est connue pour ses espaces culturels, ses cafés, ses quartiers en renouvellement et son ambiance moins pressée que la capitale.</p><p>Elle constitue aussi un bon point de départ pour explorer le centre de Taïwan, avec des excursions possibles vers des zones de montagne ou le lac du Soleil et de la Lune.</p>"
+      },
+      "featured_media": 5,
       "acf": {
         "region": "central",
         "featured": false,
         "gallery": [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGc_5niYCFjHkoAYKGf_4QsGNchIkUOhi6Q&s",
-          "https://www.agoda.com/wp-content/uploads/2024/08/taichung-taiwan-featured.jpg",
-          "https://www.agoda.com/wp-content/uploads/2024/02/Featured-image-Wufeng-Lin-Family-Mansion-and-Garden-Taichung-Taiwan-1244x700.jpg"
+          "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+          "https://images.unsplash.com/photo-1493246507139-91e8fad9978e",
+          "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
         ],
+        "best_for": [
+          "cafes",
+          "creative-districts",
+          "city-break",
+          "basecamp"
+        ],
+        "days_recommended": 2,
         "tags": [
-          "Taiwan",
-          "Travel"
+          "cafés",
+          "créatif",
+          "marché de nuit",
+          "centre"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "slug": "jiufen",
+      "title": {
+        "rendered": "Jiufen"
+      },
+      "excerpt": {
+        "rendered": "<p>Jiufen attire pour ses ruelles en pente, ses lanternes, ses maisons de thé et ses vues sur la mer.</p>"
+      },
+      "content": {
+        "rendered": "<p>Situé au nord-est de Taipei, Jiufen est souvent visité à la journée mais mérite qu’on le regarde avec un peu plus de douceur. Son relief, ses venelles étroites et son ambiance particulière en font un lieu très photogénique, surtout en fin d’après-midi.</p><p>Pour une démo, Jiufen apporte une destination plus compacte, presque carte postale, utile pour varier les types de pages entre grande ville et village de colline.</p>"
+      },
+      "featured_media": 6,
+      "acf": {
+        "region": "north",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+        ],
+        "best_for": [
+          "day-trip",
+          "photography",
+          "tea-houses",
+          "views"
+        ],
+        "days_recommended": 1,
+        "tags": [
+          "lanternes",
+          "maisons de thé",
+          "vues",
+          "excursion"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "slug": "sun-moon-lake",
+      "title": {
+        "rendered": "Sun Moon Lake"
+      },
+      "excerpt": {
+        "rendered": "<p>Le lac du Soleil et de la Lune offre une parenthèse nature appréciée pour les balades, les points de vue et les séjours plus calmes.</p>"
+      },
+      "content": {
+        "rendered": "<p>Destination populaire du centre de Taïwan, Sun Moon Lake séduit par son cadre naturel, ses promenades au bord de l’eau, ses temples et ses itinéraires à vélo. C’est une étape intéressante pour ralentir le rythme après plusieurs jours en ville.</p><p>Dans une application de démonstration, cette destination permet d’ajouter un registre plus contemplatif et de tester un contenu centré sur la nature et les activités extérieures.</p>"
+      },
+      "featured_media": 7,
+      "acf": {
+        "region": "central",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+        ],
+        "best_for": [
+          "nature",
+          "cycling",
+          "relax",
+          "scenery"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "lac",
+          "vélo",
+          "nature",
+          "calme"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "slug": "alishan",
+      "title": {
+        "rendered": "Alishan"
+      },
+      "excerpt": {
+        "rendered": "<p>Alishan évoque les forêts de montagne, les levers de soleil et une ambiance plus fraîche en altitude.</p>"
+      },
+      "content": {
+        "rendered": "<p>Alishan est l’une des destinations de montagne les plus connues de Taïwan. On y vient pour ses forêts, ses chemins de promenade, son air plus frais et ses panoramas lorsque la météo s’y prête. Le lieu apporte une dimension plus alpine à un voyage souvent centré sur les villes et la côte.</p><p>Pour une démo, Alishan enrichit bien l’univers visuel avec une destination plus verte, plus brumeuse et très différente des grands centres urbains.</p>"
+      },
+      "featured_media": 8,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b"
+        ],
+        "best_for": [
+          "mountains",
+          "forest",
+          "sunrise",
+          "cooler-weather"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "forêt",
+          "montagne",
+          "lever de soleil",
+          "altitude"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "slug": "kenting",
+      "title": {
+        "rendered": "Kenting"
+      },
+      "excerpt": {
+        "rendered": "<p>Kenting apporte une ambiance balnéaire, tropicale et détendue à l’extrême sud de l’île.</p>"
+      },
+      "content": {
+        "rendered": "<p>Au sud de Taïwan, Kenting est souvent associée aux plages, à la chaleur, aux routes côtières et à une atmosphère de vacances plus marquée. C’est une destination appréciée pour varier un itinéraire urbain avec quelques jours plus ouverts sur la mer et les paysages.</p><p>Même dans une base de démonstration, elle joue bien son rôle de destination “soleil et air marin”, utile pour équilibrer l’ensemble du contenu.</p>"
+      },
+      "featured_media": 9,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+          "https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+        ],
+        "best_for": [
+          "beaches",
+          "coast",
+          "sunshine",
+          "road-trip"
+        ],
+        "days_recommended": 2,
+        "tags": [
+          "plages",
+          "sud",
+          "côte",
+          "détente"
         ]
       }
     }
   ],
   "pages": [
     {
-      "id": 4,
+      "id": 30,
       "slug": "about-taiwan",
-      "title": { "rendered": "About Taiwan" },
-      "excerpt": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
-      "content": { "rendered": "<p>Taiwan is a country with rich history and a rich culture. It is known for its beautiful landscapes, rich culture, and vibrant traditions.</p>" },
-      "template": "practical-info"
+      "title": {
+        "rendered": "À propos de Taïwan"
+      },
+      "excerpt": {
+        "rendered": "<p>Une présentation générale de Taïwan pour introduire l’île, ses ambiances et ses grands repères de voyage.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taïwan est une destination qui combine grandes villes modernes, montagnes, côtes, temples, marchés de nuit et culture culinaire très forte. Pour une démo, c’est un terrain parfait : visuellement riche, varié, et suffisamment évocateur pour construire un site éditorial crédible.</p><p>Cette page sert d’introduction générale avant d’entrer dans le détail des destinations et des informations pratiques.</p>"
+      },
+      "template": "practical-info",
+      "featured_media": 11
     },
     {
-      "id": 20,
+      "id": 31,
       "slug": "weather",
-      "title": { "rendered": "Weather" },
-      "excerpt": { "rendered": "<p>Check out the weather forecast for Taiwan.</p>" },
-      "content": { "rendered": "<p>Check out the weather forecast for Taiwan.</p>" },
-      "featured_media": 7,
+      "title": {
+        "rendered": "Météo"
+      },
+      "excerpt": {
+        "rendered": "<p>Quand partir à Taïwan et à quoi s’attendre selon les régions et les saisons.</p>"
+      },
+      "content": {
+        "rendered": "<p>Le climat varie selon la saison, l’altitude et les régions. Le nord peut être plus humide, tandis que le sud est souvent plus ensoleillé. Les périodes de printemps et d’automne sont généralement appréciées pour voyager, avec des températures souvent agréables.</p><p>Pour une démo, cette page peut accueillir à terme un composant météo, une carte ou une timeline mensuelle.</p>"
+      },
+      "featured_media": 12,
       "template": "practical-info"
     },
     {
-      "id": 21,
+      "id": 32,
       "slug": "visa",
-      "title": { "rendered": "Visa" },
-      "excerpt": { "rendered": "<p>Check out the visa requirements for Taiwan.</p>" },
-      "content": { "rendered": "<p>Check out the visa requirements for Taiwan.</p>" },
-      "featured_media": 8,
+      "title": {
+        "rendered": "Visa et formalités"
+      },
+      "excerpt": {
+        "rendered": "<p>Les informations de base à vérifier avant de partir : passeport, formalités et préparation du voyage.</p>"
+      },
+      "content": {
+        "rendered": "<p>Les conditions d’entrée varient selon la nationalité et la durée du séjour. Il est toujours recommandé de vérifier les règles officielles avant le départ, notamment concernant la validité du passeport, les séjours touristiques et les éventuels justificatifs demandés.</p><p>Dans une démo, cette page sert surtout de modèle pour une section pratique structurée et rassurante.</p>"
+      },
+      "featured_media": 13,
       "template": "practical-info"
     },
     {
-      "id": 22,
+      "id": 33,
       "slug": "transportation",
-      "title": { "rendered": "Transportation" },
-      "excerpt": { "rendered": "<p>Check out the transportation options in Taiwan.</p>" },
-      "content": { "rendered": "<p>Check out the transportation options in Taiwan.</p>" },
-      "featured_media": 9,
+      "title": {
+        "rendered": "Transports"
+      },
+      "excerpt": {
+        "rendered": "<p>Se déplacer à Taïwan est relativement simple grâce au train, au métro, aux bus et aux liaisons interurbaines.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taïwan se parcourt facilement avec un mélange de métro dans les grandes villes, de trains classiques ou à grande vitesse entre certaines régions, et de bus pour compléter les trajets. Dans les centres urbains, les cartes de transport rendent les déplacements très fluides.</p><p>Cette page est idéale pour une démo si tu veux afficher des blocs de conseils, des icônes ou une FAQ.</p>"
+      },
+      "featured_media": 14,
       "template": "practical-info"
     },
     {
-      "id": 23,
+      "id": 34,
       "slug": "culture",
-      "title": { "rendered": "Culture" },
-      "excerpt": { "rendered": "<p>Check out the cultural experiences in Taiwan.</p>" },
-      "content": { "rendered": "<p>Check out the cultural experiences in Taiwan.</p>" },
+      "title": {
+        "rendered": "Culture"
+      },
+      "excerpt": {
+        "rendered": "<p>Une page pour introduire les temples, les marchés de nuit, les usages locaux et l’ambiance générale du voyage.</p>"
+      },
+      "content": {
+        "rendered": "<p>Découvrir Taïwan, c’est aussi prendre le temps d’observer ses temples, ses habitudes de quartier, sa politesse du quotidien, ses marchés de nuit et l’importance de la nourriture dans la vie sociale. Même un court voyage donne déjà un aperçu de cette richesse culturelle.</p><p>Dans une application de démonstration, cette page permet de varier les formats éditoriaux avec un contenu plus narratif.</p>"
+      },
+      "featured_media": 15,
       "template": "practical-info"
     },
     {
-      "id": 24,
+      "id": 35,
       "slug": "accommodation",
-      "title": { "rendered": "Accommodation" },
-      "excerpt": { "rendered": "<p>Check out the accommodation options in Taiwan.</p>" },
-      "content": { "rendered": "<p>Check out the accommodation options in Taiwan.</p>" },
+      "title": {
+        "rendered": "Hébergement"
+      },
+      "excerpt": {
+        "rendered": "<p>Choisir entre hôtels urbains, guesthouses, séjours plus design ou étapes nature selon le style de voyage recherché.</p>"
+      },
+      "content": {
+        "rendered": "<p>Le choix de l’hébergement dépend du rythme du voyage et des destinations. Les grandes villes offrent un large éventail d’options, tandis que les zones plus naturelles ou côtières permettent de privilégier des séjours plus calmes. Pour une démo, cette page est surtout utile pour tester des sections éditoriales avec listes, encarts et recommandations.</p>"
+      },
+      "featured_media": 16,
       "template": "practical-info"
     }
   ],
   "media": [
     {
       "id": 1,
-      "source_url": "https://static.vecteezy.com/ti/photos-gratuite/p2/2057422-taipei-101-tour-et-vue-de-taipei-taiwan-gratuit-photo.jpg",
-      "alt_text": "Vue de Taipei Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1652005344332-7c6855835a9a",
+      "alt_text": "Vue urbaine de Taipei"
     },
     {
       "id": 2,
-      "source_url": "https://www.taiwan-roads.fr/wp-content/uploads/2019/04/Taichung-Taiwan4.jpg",
-      "alt_text": "Vue de Taichung Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      "alt_text": "Vue de Kaohsiung au bord de l’eau"
     },
     {
       "id": 3,
-      "source_url": "https://www.agoda.com/wp-content/uploads/2024/06/hsinchu-taiwan-2-1244x700.jpg",
-      "alt_text": "Vue de Hsinchu Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+      "alt_text": "Paysage côtier évoquant Hualien"
     },
     {
       "id": 4,
-      "source_url": "https://www.taiwan-roads.fr/wp-content/uploads/2019/04/Tainan-Taiwan2.jpg",
-      "alt_text": "Vue de Tainan Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+      "alt_text": "Rue ancienne et ambiance historique pour Tainan"
     },
     {
       "id": 5,
-      "source_url": "https://chrisandwrensworld.com/wp-content/uploads/2024/06/DJI_0952-1.jpeg",
-      "alt_text": "Vue de Kaohsiung Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+      "alt_text": "Scène urbaine contemporaine pour Taichung"
     },
     {
       "id": 6,
-      "source_url": "https://peakvisor.com/photo/SD/Hualien-County-Taiwan-Suhua-Highway.jpg",
-      "alt_text": "Vue de Hualien Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+      "alt_text": "Ruelles et lanternes pour Jiufen"
     },
     {
       "id": 7,
-      "source_url": "https://images.unsplash.com/photo-1601823984263-b87b59798b70",
-      "alt_text": "Weather Taiwan"
+      "source_url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      "alt_text": "Vue paisible du lac du Soleil et de la Lune"
     },
     {
       "id": 8,
-      "source_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec",
-      "alt_text": "Passeport and visa"
+      "source_url": "https://images.unsplash.com/photo-1448375240586-882707db888b",
+      "alt_text": "Forêt de montagne pour Alishan"
     },
     {
       "id": 9,
+      "source_url": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+      "alt_text": "Ambiance côtière pour Kenting"
+    },
+    {
+      "id": 10,
+      "source_url": "https://images.unsplash.com/photo-1528164344705-47542687000d",
+      "alt_text": "Image de couverture du blog Taïwan"
+    },
+    {
+      "id": 11,
+      "source_url": "https://images.unsplash.com/photo-1519046904884-53103b34b206",
+      "alt_text": "Présentation générale de Taïwan"
+    },
+    {
+      "id": 12,
+      "source_url": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b",
+      "alt_text": "Ciel nuageux et météo"
+    },
+    {
+      "id": 13,
+      "source_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec",
+      "alt_text": "Passeport et formalités"
+    },
+    {
+      "id": 14,
       "source_url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
-      "alt_text": "Transportation Taiwan"
+      "alt_text": "Transport et mobilité"
+    },
+    {
+      "id": 15,
+      "source_url": "https://images.unsplash.com/photo-1514565131-fce0801e5785",
+      "alt_text": "Temple et ambiance culturelle"
+    },
+    {
+      "id": 16,
+      "source_url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+      "alt_text": "Hébergement et séjour"
     }
   ]
 }
