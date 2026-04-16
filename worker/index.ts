@@ -242,7 +242,7 @@ export default {
 
     // posts
     if (pathname === '/wp-json/wp/v2/posts') {
-      let items = [db.posts];
+      let items = [...db.posts];
       const slug = searchParams.get('slug');
       if (slug) {
         items = items.filter((post: any) => post.slug === slug);
@@ -253,7 +253,7 @@ export default {
     // destinations
 
     if (pathname === '/wp-json/wp/v2/destinations') {
-      let items = [db.destinations];
+      let items = [...db.destinations];
       const slug = searchParams.get('slug');
       if (slug) {
         items = items.filter((destination: any) => destination.slug === slug);
@@ -263,7 +263,7 @@ export default {
 
     // pages
     if (pathname === '/wp-json/wp/v2/pages') {
-      let items = [db.pages];
+      let items = [...db.pages];
       const slug = searchParams.get('slug');
       const template = searchParams.get('template');
       if (slug) {
