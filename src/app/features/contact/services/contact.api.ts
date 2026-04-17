@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { ContactForm, ContactResponse } from '../models/contact.model';
 import { Observable } from 'rxjs';
 import { API_CONFIG_TOKEN } from '../../../core/config/injection-token';
+import { WP_ENDPOINTS } from '../../../cms/wordpress/wp-endpoints';
 
 @Injectable({
   providedIn: 'root',
@@ -16,6 +17,9 @@ export class ContactApi {
       ...payload,
       timestamp: Date.now(),
     };
-    return this.http.post<ContactResponse>(this.config.wordpressApiBaseUrl, body);
+    return this.http.post<ContactResponse>(
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.contacts}`,
+      body,
+    );
   }
 }

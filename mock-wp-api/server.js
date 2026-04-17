@@ -49,6 +49,23 @@ server.get('/wp-json/wp/v2/pages', (req, res) => {
   res.jsonp(items);
 })
 
+// contact api
+server.post('/wp-json/wp/v2/contact', (req, res) => {
+  const db = router.db;
+  const newContact = {
+    name: req.body.name,
+    email: req.body.email,
+    subject: req.body.subject,
+    message: req.body.message,
+    source: req.body.source,
+    timestamp: Date.now(),
+  };
+
+  db.get('contacts').push(newContact).write();
+
+  res.jsonp({ success: true, message: 'Message sent successfully' });
+})
+
 server.use(router);
 server.listen(3000, () => {
   console.log('JSON Server is running on http://localhost:3000');

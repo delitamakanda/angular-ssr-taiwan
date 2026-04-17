@@ -520,5 +520,14 @@
       "source_url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
       "alt_text": "Hébergement et séjour"
     }
+  ],
+  "contacts": [
+    {
+      "name": "delita",
+      "email": "delita.makanda@gmail.com",
+      "subject": "live a good life and peace of mind",
+      "message": "make a great progress and live a good life forever",
+      "timestamp": 1776437706069
+    }
   ]
 }

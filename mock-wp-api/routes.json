@@ -2,5 +2,6 @@
   "/wp-json/wp/v2/posts": "/posts",
   "/wp-json/wp/v2/destinations": "/destinations",
   "/wp-json/wp/v2/media": "/media",
-  "/wp-json/wp/v2/pages": "/pages"
+  "/wp-json/wp/v2/pages": "/pages",
+  "/wp-json/wp/v2/contact": "/contact"
 }

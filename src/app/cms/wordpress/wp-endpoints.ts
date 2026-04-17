@@ -3,4 +3,5 @@ export const WP_ENDPOINTS = {
   destinations: '/destinations',
   media: '/media',
   pages: '/pages',
+  contacts: '/contact',
 }
