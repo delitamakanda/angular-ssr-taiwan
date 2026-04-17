@@ -10,17 +10,12 @@ export const PRACTICAL_INFO_ROUTES: Routes = [
       ),
     children: [
       {
-        path: ':slug',
-        loadComponent: () =>
-          import('./pages/practical-info/practical-info-page.component').then(
-            (m) => m.PracticalInfoPageComponent,
-          ),
-        resolve: {
-          page: practicalInfoResolver,
-        },
+        path: '',
+        redirectTo: 'about-taiwan',
+        pathMatch: 'full',
       },
       {
-        path: '**',
+        path: ':slug',
         loadComponent: () =>
           import('./pages/practical-info/practical-info-page.component').then(
             (m) => m.PracticalInfoPageComponent,

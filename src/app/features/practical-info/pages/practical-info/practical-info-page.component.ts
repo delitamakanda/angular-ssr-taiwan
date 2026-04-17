@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, effect, inject, input } from '@angular/core';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../../core/config/site.config';
 import { Page } from '../../../../core/models/page.model';
@@ -12,13 +12,20 @@ import { Page } from '../../../../core/models/page.model';
 })
 export class PracticalInfoPageComponent {
   private readonly seo = inject(SeoService);
-  readonly page = input<Page |null>();
+  readonly page = input<Page | null>();
 
   constructor() {
-    this.seo.update({
-      title: 'Practical Information',
-      description: 'Learn about the practical aspects of using the appliance, such as adjusting settings, troubleshooting, and maintaining it.',
-      canonical_url: `${SITE_CONFIG.site_url}/practical-info`,
-    })
+    effect(() => {
+      const page = this.page();
+      if (!page) {
+        return;
+      }
+      this.seo.update({
+        title: page.title || 'Practical Info',
+        description: page?.excerpt,
+        canonical_url: `${SITE_CONFIG.site_url}/practical-info/${page.slug}`,
+      });
+    });
+
   }
 }
