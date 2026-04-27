@@ -12,4 +12,5 @@ import { LazyImageDirective } from '../../../../shared/directives/lazy-image.dir
 })
 export class ArticleCard {
   readonly post = input.required<Article>();
+  priority = input<'high' | 'low'>('low');
 }

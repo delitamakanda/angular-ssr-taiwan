@@ -13,8 +13,8 @@
       <p>No destinations found.</p>
     } @else {
       <div class="grid grid-cols-2 gap-4">
-        @for (item of store.filteredItems(); track item.id) {
-          <app-destination-card [destination]="item" />
+        @for (item of store.filteredItems(); track item.id; let i = $index) {
+          <app-destination-card [destination]="item"  [priority]="i === 0 ? 'high' : 'low'" />
         }
       </div>
     }

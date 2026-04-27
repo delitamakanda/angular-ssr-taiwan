@@ -8,8 +8,8 @@
       <p>No post found.</p>
     } @else {
       <div class="grid grid-cols-2 gap-4">
-        @for (item of store.articles(); track item.id) {
-          <app-article-card [post]="item" />
+        @for (item of store.articles(); track item.id; let i = $index) {
+          <app-article-card [post]="item" [priority]="i === 0 ? 'high' : 'low'" />
         }
       </div>
     }
