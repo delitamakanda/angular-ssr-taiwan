@@ -14,6 +14,7 @@ export class SeoService {
   update(data: SeoData): void {
     this.title.setTitle(data.title);
     this.meta.updateTag({ name: 'og:title', content: data.title });
+    this.meta.updateTag({ name: 'description', content: data.description ?? '' });
     this.meta.updateTag({ name: 'og:description', content: data.description ?? '' });
     this.meta.updateTag({ name: 'og:image', content: data.image ?? '' });
     this.meta.updateTag({ name: 'og:url', content: data.canonical_url ?? '' });
