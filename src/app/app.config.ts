@@ -3,7 +3,7 @@ import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withVi
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import { apiBaseUrlInterceptor } from './core/http/interceptors/api-base-url.interceptor';
 import { errorInterceptor } from './core/http/interceptors/error.interceptor';
 import { loadingInterceptor } from './core/http/interceptors/loading.interceptor';
@@ -34,10 +34,11 @@ export const appConfig: ApplicationConfig = {
           return `${url}?w=${width}&q=75&fm=webp`;
         }
         return url;
-      }
+      },
     },
     provideHttpClient(
       withInterceptors([apiBaseUrlInterceptor, errorInterceptor, loadingInterceptor]),
+      withFetch(),
     ),
     {
       provide: API_CONFIG_TOKEN,
