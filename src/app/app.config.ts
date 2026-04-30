@@ -9,6 +9,7 @@ import { errorInterceptor } from './core/http/interceptors/error.interceptor';
 import { loadingInterceptor } from './core/http/interceptors/loading.interceptor';
 import { API_CONFIG_TOKEN } from './core/config/injection-token';
 import { API_CONFIG } from './core/config/api.config';
+import { IMAGE_LOADER, ImageLoaderConfig } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -24,12 +25,23 @@ export const appConfig: ApplicationConfig = {
       }),
     ),
     provideClientHydration(withEventReplay()),
+    {
+      provide: IMAGE_LOADER,
+      useValue: (config: ImageLoaderConfig) => {
+        const url = config.src;
+        if (url.includes('unsplash.com')) {
+          const width = config.width || 400;
+          return `${url}?w=${width}&q=75&fm=webp`;
+        }
+        return url;
+      }
+    },
     provideHttpClient(
       withInterceptors([apiBaseUrlInterceptor, errorInterceptor, loadingInterceptor]),
     ),
     {
       provide: API_CONFIG_TOKEN,
-      useValue: API_CONFIG
-    }
+      useValue: API_CONFIG,
+    },
   ],
 };
