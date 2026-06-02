@@ -2,11 +2,11 @@
   <article class="mx-auto px-4 py-10">
     @if (page()?.cover_image_url) {
       <div class="relative z-10">
-        <img [src]="page()?.cover_image_url" alt="Image" class="object-cover w-full h-64" />
+        <img [ngSrc]="page()?.cover_image_url!" alt="Image" class="object-cover w-full h-64" [priority]="priority()" [lazy]="page()?.cover_image_url!" [width]="1920" [height]="1080" />
       </div>
     } @else {
       <div class="relative z-10">
-        <img src="https://via.placeholder.com/1920x1080" alt="Image" class="object-cover w-full h-64" />
+        <img ngSrc="https://via.placeholder.com/1920x1080" alt="Image" class="object-cover w-full h-64" [width]="1920" [height]="1080" fetchpriority="high" lazy="https://via.placeholder.com/1920x1080" />
         <div class="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-50"></div>
       </div>
     }

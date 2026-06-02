@@ -1,18 +1,20 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DestinationDetailStore } from '../../state/destination-detail.store';
 import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { stripHtml } from '../../../../shared/utils/strip-html.util';
 import { SITE_CONFIG } from '../../../../core/config/site.config';
+import { NgOptimizedImage } from '@angular/common';
+import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive';
 
 @Component({
   selector: 'app-destinations-detail-page.component',
-  imports: [RouterLink, StripHtmlPipe],
+  imports: [RouterLink, StripHtmlPipe, NgOptimizedImage, LazyImageDirective],
   providers: [DestinationDetailStore],
   standalone: true,
   templateUrl: './destinations-detail-page.component.html',
-  styleUrl: './destinations-detail-page.component.scss',
+  styleUrls: ['./destinations-detail-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DestinationsDetailPageComponent {
@@ -21,6 +23,8 @@ export class DestinationsDetailPageComponent {
   readonly store = inject(DestinationDetailStore);
 
   readonly destination = computed(() => this.store.item());
+
+  priority = input<'high' | 'low'>('low');
 
   constructor() {
     const slug = this.route.snapshot.paramMap.get('slug');

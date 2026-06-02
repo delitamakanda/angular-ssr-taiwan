@@ -2,10 +2,12 @@ import { Component, effect, inject, input } from '@angular/core';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../../core/config/site.config';
 import { Page } from '../../../../core/models/page.model';
+import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-practical-info-page.component',
-  imports: [],
+  imports: [NgOptimizedImage, LazyImageDirective],
   standalone: true,
   templateUrl: './practical-info-page.component.html',
   styleUrl: './practical-info-page.component.scss',
@@ -13,6 +15,8 @@ import { Page } from '../../../../core/models/page.model';
 export class PracticalInfoPageComponent {
   private readonly seo = inject(SeoService);
   readonly page = input<Page | null>();
+
+  priority = input<'high' | 'low'>('low');
 
   constructor() {
     effect(() => {

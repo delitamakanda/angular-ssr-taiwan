@@ -23,9 +23,13 @@
       <header class="space-y-6">
         @if (item.cover_image_url) {
           <img
-            [src]="item.cover_image_url"
+            [ngSrc]="item.cover_image_url!"
             [alt]="item.title"
+            fetchpriority="high"
+            [attr.loading]="priority() === 'high' ? 'eager' : 'lazy'"
             class="h-[420px] w-full rounded-3xl object-cover"
+            [width]="1200"
+            [height]="675"
           />
         } @else {
           <div class="h-[420px] w-full rounded-3xl bg-gray-200"></div>
