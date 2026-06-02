@@ -5,10 +5,10 @@
     @if (form.controls.name.touched && form.controls.name.invalid) {
       <p class="mt-1 text-sm text-red-600">Name is required.</p>
     }
-    @if (form.controls.name.value.length > 50) {
+    @if (form.controls.name.touched && form.controls.name.value.length > 50) {
       <p class="mt-1 text-sm text-red-600">Name should not exceed 50 characters.</p>
     }
-    @if (form.controls.name.value.length < 3) {
+    @if (form.controls.name.touched && form.controls.name.value.length < 3) {
       <p class="mt-1 text-sm text-red-600">Name should have at least 3 characters.</p>
     }
   </div>
