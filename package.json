@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-ssr-taiwan": "node dist/angular-ssr-taiwan/server/server.mjs"
+    "serve:ssr:angular-ssr-taiwan": "node dist/angular-ssr-taiwan/server/server.mjs",
+    "mock:api": "cd mock-wp-api && npm run start:mock-api"
   },
   "private": true,
   "packageManager": "npm@11.11.0",
