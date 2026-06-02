@@ -26,6 +26,7 @@
             [ngSrc]="item.cover_image_url!"
             [alt]="item.title"
             fetchpriority="high"
+            [lazy]="item.cover_image_url!"
             [attr.loading]="priority() === 'high' ? 'eager' : 'lazy'"
             class="h-[420px] w-full rounded-3xl object-cover"
             [width]="1200"
