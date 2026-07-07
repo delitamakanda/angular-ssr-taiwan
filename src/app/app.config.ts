@@ -16,7 +16,7 @@ import {
   withEventReplay,
   withNoIncrementalHydration,
 } from '@angular/platform-browser';
-import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { apiBaseUrlInterceptor } from './core/http/interceptors/api-base-url.interceptor';
 import { errorInterceptor } from './core/http/interceptors/error.interceptor';
 import { loadingInterceptor } from './core/http/interceptors/loading.interceptor';
@@ -51,7 +51,6 @@ export const appConfig: ApplicationConfig = {
     },
     provideHttpClient(
       withInterceptors([apiBaseUrlInterceptor, errorInterceptor, loadingInterceptor]),
-      withFetch(),
     ),
     {
       provide: API_CONFIG_TOKEN,

@@ -9,7 +9,7 @@ import { LoaderComponent } from '@app/shared/component/loader/loader.component';
   selector: 'app-shell',
   imports: [RouterOutlet, FooterComponent, HeaderComponent, LoaderComponent],
   standalone: true,
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex flex-col min-h-screen">
       <app-header />
