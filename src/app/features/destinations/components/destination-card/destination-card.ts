@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Destination } from '../../models/destination.model';
 import { RouterLink } from '@angular/router';
 import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
@@ -10,6 +10,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterLink, StripHtmlPipe, LazyImageDirective, NgOptimizedImage],
   templateUrl: './destination-card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './destination-card.scss',
 })
 export class DestinationCard {

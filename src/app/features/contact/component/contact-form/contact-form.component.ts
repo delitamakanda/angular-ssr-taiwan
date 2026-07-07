@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ContactApi } from '../../services/contact.api';
 import { finalize } from 'rxjs';
@@ -8,6 +8,7 @@ import { finalize } from 'rxjs';
   imports: [ReactiveFormsModule],
   standalone: true,
   templateUrl: './contact-form.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {
@@ -21,9 +22,9 @@ export class ContactFormComponent {
   readonly form = this.fb.nonNullable.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
-    subject: ['', [Validators.required, Validators.minLength(10) ]],
-    message: ['', [Validators.required ]],
-  })
+    subject: ['', [Validators.required, Validators.minLength(10)]],
+    message: ['', [Validators.required]],
+  });
 
   submit(): void {
     if (this.form.invalid || this.sending()) {
@@ -34,10 +35,9 @@ export class ContactFormComponent {
     this.sending.set(true);
     this.error.set(null);
 
-    this.api.sendContact(this.form.getRawValue())
-      .pipe(
-        finalize(() => this.sending.set(false))
-      )
+    this.api
+      .sendContact(this.form.getRawValue())
+      .pipe(finalize(() => this.sending.set(false)))
       .subscribe({
         next: () => {
           this.submitted.set(true);
@@ -45,9 +45,7 @@ export class ContactFormComponent {
         },
         error: (error: string) => {
           this.error.set(error);
-        }
-      })
-
-
+        },
+      });
   }
 }

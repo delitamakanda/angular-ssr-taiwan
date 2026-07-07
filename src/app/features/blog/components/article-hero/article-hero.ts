@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-article-hero',
@@ -15,6 +15,7 @@ import { Component, input } from '@angular/core';
       <p>{{ subtitle() }}</p>
     }
   </div>`,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './article-hero.scss',
 })
 export class ArticleHero {

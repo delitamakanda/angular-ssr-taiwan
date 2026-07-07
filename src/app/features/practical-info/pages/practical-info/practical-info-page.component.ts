@@ -1,4 +1,4 @@
-import { Component, effect, inject, input } from '@angular/core';
+import { Component, effect, inject, input, ChangeDetectionStrategy } from '@angular/core';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../../core/config/site.config';
 import { Page } from '../../../../core/models/page.model';
@@ -10,6 +10,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage, LazyImageDirective],
   standalone: true,
   templateUrl: './practical-info-page.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './practical-info-page.component.scss',
 })
 export class PracticalInfoPageComponent {
@@ -30,6 +31,5 @@ export class PracticalInfoPageComponent {
         canonical_url: `${SITE_CONFIG.site_url}/practical-info/${page.slug}`,
       });
     });
-
   }
 }

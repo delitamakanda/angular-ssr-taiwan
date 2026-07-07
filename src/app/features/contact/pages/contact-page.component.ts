@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { SeoService } from '../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../core/config/site.config';
 import { ContactFormComponent } from '../component/contact-form/contact-form.component';
@@ -7,6 +7,7 @@ import { ContactFormComponent } from '../component/contact-form/contact-form.com
   selector: 'app-contact-page.component',
   imports: [ContactFormComponent],
   templateUrl: './contact-page.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact-page.component.scss',
 })
 export class ContactPageComponent {
