@@ -3,35 +3,35 @@
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="2821179408673282599" datatype="html">
-        <source>Home</source>
+        <source>家</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">19,20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5582528645278437514" datatype="html">
-        <source>Destinations</source>
+        <source>地理位置</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5539833462297888878" datatype="html">
-        <source>Articles</source>
+        <source>文章</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">21,22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5177792457884864697" datatype="html">
-        <source>Practical info</source>
+        <source>實用資訊</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
-        <source>Contact</source>
+        <source>聯絡我們</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">23,24</context>
