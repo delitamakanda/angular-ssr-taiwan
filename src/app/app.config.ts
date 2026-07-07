@@ -22,7 +22,15 @@ import { errorInterceptor } from './core/http/interceptors/error.interceptor';
 import { loadingInterceptor } from './core/http/interceptors/loading.interceptor';
 import { API_CONFIG_TOKEN } from './core/config/injection-token';
 import { API_CONFIG } from './core/config/api.config';
-import { IMAGE_LOADER, ImageLoaderConfig } from '@angular/common';
+import { IMAGE_LOADER, ImageLoaderConfig, registerLocaleData } from '@angular/common';
+import localeEn from '@angular/common/locales/en';
+import localeZhHant from '@angular/common/locales/zh-Hant';
+import localeFr from '@angular/common/locales/fr';
+
+registerLocaleData(localeEn, 'en-US');
+registerLocaleData(localeZhHant, 'zh-TW');
+registerLocaleData(localeFr, 'fr-FR');
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
