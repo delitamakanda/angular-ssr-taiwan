@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { SeoService } from '../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../core/config/site.config';
 
@@ -6,6 +6,7 @@ import { SITE_CONFIG } from '../../../core/config/site.config';
   selector: 'app-home-page.component',
   imports: [],
   templateUrl: './home-page.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent {

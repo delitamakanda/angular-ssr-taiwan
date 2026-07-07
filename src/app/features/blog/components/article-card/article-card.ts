@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Article } from '../../models/article.model';
 import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
 import { RouterLink } from '@angular/router';
@@ -9,6 +9,7 @@ import { NgOptimizedImage } from '@angular/common';
   selector: 'app-article-card',
   imports: [StripHtmlPipe, RouterLink, LazyImageDirective, NgOptimizedImage],
   templateUrl: './article-card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './article-card.scss',
 })
 export class ArticleCard {
