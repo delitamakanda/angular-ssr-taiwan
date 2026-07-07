@@ -3,7 +3,7 @@
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="2821179408673282599" datatype="html">
-        <source>Home</source>
+        <source>Acceuil</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">19,20</context>
@@ -24,14 +24,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5177792457884864697" datatype="html">
-        <source>Practical info</source>
+        <source>Informations pratiques</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
-        <source>Contact</source>
+        <source>Contactez nous</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
           <context context-type="linenumber">23,24</context>
