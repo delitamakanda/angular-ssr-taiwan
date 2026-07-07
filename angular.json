@@ -8,6 +8,13 @@
   "projects": {
     "angular-ssr-taiwan": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "zh-TW": "src/locale/messages.zh-TW.xlf",
+          "fr-FR": "src/locale/messages.fr-FR.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -23,6 +30,9 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "localize": true,
+            "i18nDuplicateTranslation": "error",
+            "i18nMissingTranslation": "error",
             "assets": [
               {
                 "glob": "**/*",
@@ -72,6 +82,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr-FR": {
+              "localize": ["fr-FR"]
+            },
+            "zh-TW": {
+              "localize": ["zh-TW"]
             }
           },
           "defaultConfiguration": "production"
@@ -90,6 +106,12 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "extract-i18n": {
+          "builder": "@angular/build:extract-i18n",
+          "options": {
+           "buildTarget": "angular-ssr-taiwan:build"
+          }
         }
       }
     }
