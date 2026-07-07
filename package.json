@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular-ssr-taiwan": "node dist/angular-ssr-taiwan/server/server.mjs",
-    "mock:api": "cd mock-wp-api && npm run start:mock-api"
+    "mock:api": "cd mock-wp-api && npm run start:mock-api",
+    "extract-i18n": "ng extract-i18n --output-path src/locale --format xlf",
+    "locale:fr": "ng extract-i18n --output-path src/locale --format xlf --out-file messages.fr-FR.xlf",
+    "locale:zh": "ng extract-i18n --output-path src/locale --format xlf --out-file messages.zh-TW.xlf",
+    "locale:en": "ng extract-i18n --output-path src/locale --format xlf --out-file messages.en-US.xlf"
   },
   "private": true,
   "packageManager": "npm@11.11.0",
