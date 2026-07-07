@@ -43,7 +43,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": ["angular-ssr-taiwan-946790860424.europe-west9.run.app"]
             },
             "ssr": {
               "entry": "src/server.ts"
