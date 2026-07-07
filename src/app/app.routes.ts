@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     loadComponent: () => import('./features/home/pages/home-page.component').then(m => m.HomePageComponent)
   },
   {
@@ -20,6 +20,11 @@ export const routes: Routes = [
   {
     path: 'contact',
     loadComponent: () => import('./features/contact/pages/contact-page.component').then(m => m.ContactPageComponent)
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
   },
   {
     path: '**',
