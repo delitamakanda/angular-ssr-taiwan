@@ -8,7 +8,7 @@
     <ul class="flex gap-4">
       @for (locale of availableLocales; track locale.code) {
       <li>
-        <a [routerLink]="['/']" [queryParams]="{ lang: locale.code }" role="button" [class.underline]="locale.code === currentLocale" class="hover:text-blue-600">
+        <a [href]="localeHref(locale.code)" role="button" [class.underline]="locale.code === currentLocale" class="hover:text-blue-600">
           {{ locale.label }}
         </a>
       </li>
@@ -16,14 +16,14 @@
     </ul>
 
     <nav class="flex gap-6 text-sm">
-      <a routerLink="/" class="hover:text-blue-600" i18n>Home</a>
+      <a routerLink="/home" class="hover:text-blue-600" i18n>Home</a>
       <a routerLink="/destinations" class="hover:text-blue-600" i18n>Destinations</a>
       <a routerLink="/blog" class="hover:text-blue-600" i18n>Articles</a>
       <a routerLink="/practical-info" class="hover:text-blue-600" i18n>Practical info</a>
       <a routerLink="/contact" class="hover:text-blue-600" i18n>Contact</a>
     </nav>
 
-    {{ currentLocale }}
+    {{currentLocale}}
 
   </div>
 </header>
