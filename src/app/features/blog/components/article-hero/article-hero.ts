@@ -15,7 +15,7 @@ import { Component, input, ChangeDetectionStrategy } from '@angular/core';
       <p>{{ subtitle() }}</p>
     }
   </div>`,
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './article-hero.scss',
 })
 export class ArticleHero {

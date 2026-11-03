@@ -10,7 +10,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage, LazyImageDirective],
   standalone: true,
   templateUrl: './practical-info-page.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './practical-info-page.component.scss',
 })
 export class PracticalInfoPageComponent {

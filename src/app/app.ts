@@ -5,7 +5,7 @@ import { AppShellComponent } from './core/layout/shell/app-shell.component';
   selector: 'app-root',
   imports: [AppShellComponent],
   templateUrl: './app.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './app.scss',
 })
 export class App {

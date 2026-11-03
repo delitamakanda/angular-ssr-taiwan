@@ -10,7 +10,7 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [RouterLink, StripHtmlPipe, LazyImageDirective, NgOptimizedImage],
   templateUrl: './destination-card.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './destination-card.scss',
 })
 export class DestinationCard {

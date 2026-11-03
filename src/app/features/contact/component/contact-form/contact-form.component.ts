@@ -8,7 +8,7 @@ import { finalize } from 'rxjs';
   imports: [ReactiveFormsModule],
   standalone: true,
   templateUrl: './contact-form.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {

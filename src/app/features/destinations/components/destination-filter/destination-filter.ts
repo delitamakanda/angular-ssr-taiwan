@@ -5,7 +5,7 @@ import { Component, input, output, ChangeDetectionStrategy } from '@angular/core
   imports: [],
   standalone: true,
   templateUrl: './destination-filter.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './destination-filter.scss',
 })
 export class DestinationFilter {

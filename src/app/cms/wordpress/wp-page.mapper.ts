@@ -1,7 +1,8 @@
 import { Page } from '../../core/models/page.model';
 import { Media } from './wp-media.mapper';
+import { WpPage } from './wp-api.client';
 
-export function mapWpPageWithMedia(page: any, media?: Media): Page {
+export function mapWpPageWithMedia(page: WpPage, media?: Media): Page {
   return {
     id: page.id,
     slug: page.slug,
