@@ -40,8 +40,10 @@ export class DestinationStore {
     try {
       const destinations = await firstValueFrom(this.api.getAllDestinations());
       this.items.set(destinations);
-    } catch (error) {
-      this.error.set($localize`:@@error.destinations.load:Failed to load destinations. Please try again later.`);
+    } catch {
+      this.error.set(
+        $localize`:@@error.destinations.load:Failed to load destinations. Please try again later.`,
+      );
     } finally {
       this.loading.set(false);
     }
