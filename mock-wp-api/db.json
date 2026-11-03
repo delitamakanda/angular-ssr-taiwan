@@ -27,6 +27,20 @@
         "rendered": "<p>Pour une première découverte, un itinéraire d’une semaine permet de combiner plusieurs ambiances : Taipei pour l’énergie urbaine, Taichung pour ses quartiers créatifs, Tainan pour l’histoire et la gastronomie, puis Kaohsiung pour une fin de séjour plus détendue entre art, front de mer et temples.</p><p>Ce format fonctionne bien pour une démo car il permet d’alimenter une page éditoriale avec du contenu plus long et de relier les destinations entre elles.</p>"
       },
       "featured_media": 5
+    },
+    {
+      "id": 3,
+      "slug": "marches-de-nuit-taiwan",
+      "title": {
+        "rendered": "Marchés de nuit : le guide pour bien manger"
+      },
+      "excerpt": {
+        "rendered": "<p>Perles de tapioca, tofu puant et brochettes : nos conseils pour profiter des marchés de nuit taïwanais.</p>"
+      },
+      "content": {
+        "rendered": "<p>Les marchés de nuit sont au cœur de la vie taïwanaise. Venez avec de l’appétit, un peu de monnaie et l’envie de goûter à tout.</p>"
+      },
+      "featured_media": 6
     }
   ],
   "destinations": [

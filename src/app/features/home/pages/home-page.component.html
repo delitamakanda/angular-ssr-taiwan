@@ -1,7 +1,54 @@
-<section class="space-y-6">
-  <div class="bg-gray-200 h-64 rounded-xl flex items-center justify-center">
-    <h1 class="text-3xl font-bold">Explore Taiwan</h1>
-  </div>
+<div class="space-y-12">
+  <section class="relative overflow-hidden rounded-xl bg-blue-900 text-white">
+    <img
+      ngSrc="hero-taiwan.svg"
+      alt=""
+      fill
+      priority
+      class="object-cover"
+    />
+    <div class="relative flex min-h-80 flex-col items-start justify-center gap-4 bg-black/40 p-6 sm:p-12">
+      <h1 class="text-3xl font-bold sm:text-5xl" i18n>Explore Taiwan</h1>
+      <p class="max-w-xl text-lg" i18n>
+        Discover the vibrant culture, history, and attractions of Taiwan.
+      </p>
+      <a
+        routerLink="/destinations"
+        class="rounded-full bg-white px-6 py-3 font-semibold text-blue-900 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        i18n
+      >Start exploring</a>
+    </div>
+  </section>
 
-  <p class="text-gray-600">Discover the vibrant culture, history, and attractions of Taiwan.</p>
-</section>
+  @if (destinations().length > 0) {
+    <section aria-labelledby="home-destinations-title" class="space-y-4">
+      <h2 id="home-destinations-title" class="text-2xl font-bold" i18n>Destinations</h2>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        @for (destination of destinations(); track destination.id) {
+          <app-destination-card [destination]="destination" />
+        }
+      </div>
+      <a
+        routerLink="/destinations"
+        class="inline-block font-semibold text-blue-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+        i18n
+      >View all destinations</a>
+    </section>
+  }
+
+  @if (latestArticles().length > 0) {
+    <section aria-labelledby="home-articles-title" class="space-y-4">
+      <h2 id="home-articles-title" class="text-2xl font-bold" i18n>Latest articles</h2>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        @for (post of latestArticles(); track post.id) {
+          <app-article-card [post]="post" />
+        }
+      </div>
+      <a
+        routerLink="/blog"
+        class="inline-block font-semibold text-blue-700 underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+        i18n
+      >View all articles</a>
+    </section>
+  }
+</div>
