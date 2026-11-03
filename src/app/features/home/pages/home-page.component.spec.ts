@@ -6,6 +6,8 @@ import { DestinationStore } from '@app/features/destinations/state/destination.s
 import { ArticleStore } from '@app/features/blog/state/article.store';
 import { Destination } from '@app/features/destinations/models/destination.model';
 import { Article } from '@app/features/blog/models/article.model';
+import { DestinationsApi } from '@app/features/destinations/services/destinations.api';
+import { ArticleApi } from '@app/features/blog/services/article.api';
 
 const destination = (id: number, featured: boolean): Destination => ({
   id,
@@ -18,7 +20,8 @@ const destination = (id: number, featured: boolean): Destination => ({
   featured,
 });
 
-const article = (id: number): Article => ({ id, slug: `post-${id}`, title: `Post ${id}`, excerpt: 'x' }) as Article;
+const article = (id: number): Article =>
+  ({ id, slug: `post-${id}`, title: `Post ${id}`, excerpt: 'x' }) as Article;
 
 function setup(destinations: Destination[], articles: Article[]) {
   const destinationStore = TestBed.inject(DestinationStore);
@@ -33,7 +36,15 @@ function setup(destinations: Destination[], articles: Article[]) {
 }
 
 describe('HomePageComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([])] }));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      providers: [
+        provideRouter([]),
+        { provide: DestinationsApi, useValue: {} },
+        { provide: ArticleApi, useValue: {} },
+      ],
+    }),
+  );
 
   it('renders a single h1 and a link to /destinations', () => {
     const { el } = setup([], []);
@@ -42,8 +53,13 @@ describe('HomePageComponent', () => {
   });
 
   it('shows featured destinations first', () => {
-    const { el } = setup([destination(1, false), destination(2, true), destination(3, false), destination(4, true)], []);
-    const names = Array.from(el.querySelectorAll('app-destination-card h2')).map(h => h.textContent?.trim());
+    const { el } = setup(
+      [destination(1, false), destination(2, true), destination(3, false), destination(4, true)],
+      [],
+    );
+    const names = Array.from(el.querySelectorAll('app-destination-card h2')).map((h) =>
+      h.textContent?.trim(),
+    );
     expect(names).toEqual(['Dest 2', 'Dest 4', 'Dest 1']);
   });
 
