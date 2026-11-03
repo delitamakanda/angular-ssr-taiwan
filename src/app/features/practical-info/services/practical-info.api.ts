@@ -15,7 +15,7 @@ export class PracticalInfoApi {
     return this.wp.getPage().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [([] as Page[])];
+          return [[] as Page[]];
         }
         return forkJoin(
           items.map((item) => {
@@ -38,7 +38,7 @@ export class PracticalInfoApi {
     return this.wp.getPageByTemplate(templateName).pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [([] as Page[])];
+          return [[] as Page[]];
         }
         return forkJoin(
           items.map((item) => {

@@ -15,7 +15,7 @@ export class DestinationsApi {
     return this.wp.getDestinations().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [([] as Destination[])];
+          return [[] as Destination[]];
         }
         return forkJoin(
           items.map((item) => {
