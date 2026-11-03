@@ -3,7 +3,6 @@ import { ArticleHero } from '../../components/article-hero/article-hero';
 import { ArticleCard } from '../../components/article-card/article-card';
 import { ArticleStore } from '../../state/article.store';
 import { SeoService } from '../../../../core/seo/seo.service';
-import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
   selector: 'app-article-list',
@@ -23,7 +22,7 @@ export class ArticleListPageComponent {
     this.seo.update({
       title: $localize`:@@seo.blog.title:Latest Articles`,
       description: $localize`:@@seo.blog.description:Discover the latest news articles from around the world.`,
-      canonical_url: `${SITE_CONFIG.site_url}/blog`,
+      path: '/blog',
     });
   }
 }

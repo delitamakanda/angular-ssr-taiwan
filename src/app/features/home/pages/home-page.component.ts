@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { SeoService } from '@app/core/seo/seo.service';
-import { SITE_CONFIG } from '@app/core/config/site.config';
 import { DestinationStore } from '@app/features/destinations/state/destination.store';
 import { DestinationCard } from '@app/features/destinations/components/destination-card/destination-card';
 import { ArticleStore } from '@app/features/blog/state/article.store';
@@ -31,7 +30,7 @@ export class HomePageComponent {
     this.seo.update({
       title: $localize`:@@seo.home.title:Taiwan Travel`,
       description: $localize`:@@seo.home.description:Discover Taiwan with our travel blog, guides, and exclusive offers.`,
-      canonical_url: `${SITE_CONFIG.site_url}`,
+      path: '/home',
     });
 
     // Root stores are shared: do not reload data they already hold.

@@ -17,7 +17,7 @@ export class ContactPageComponent {
     this.seo.update({
       title: `${SITE_CONFIG.site_name} | ${$localize`:@@seo.contact.title:Contact Us`}`,
       description: $localize`:@@seo.contact.description:Contact our team and get in touch with us for any inquiries, ideas, or opportunities.`,
-      canonical_url: `${SITE_CONFIG.site_url}/contact`,
+      path: '/contact',
     });
   }
 }
