@@ -31,7 +31,6 @@ registerLocaleData(localeEn, 'en-US');
 registerLocaleData(localeZhHant, 'zh-TW');
 registerLocaleData(localeFr, 'fr-FR');
 
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),

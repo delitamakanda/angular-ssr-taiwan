@@ -50,19 +50,9 @@
           "https://images.unsplash.com/photo-1652005344332-7c6855835a9a",
           "https://images.unsplash.com/photo-1528164344705-47542687000d"
         ],
-        "best_for": [
-          "city-break",
-          "food",
-          "culture",
-          "hiking"
-        ],
+        "best_for": ["city-break", "food", "culture", "hiking"],
         "days_recommended": 3,
-        "tags": [
-          "marchés de nuit",
-          "temples",
-          "cafés",
-          "montagne"
-        ]
+        "tags": ["marchés de nuit", "temples", "cafés", "montagne"]
       }
     },
     {
@@ -85,19 +75,9 @@
           "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
           "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
         ],
-        "best_for": [
-          "art",
-          "waterfront",
-          "temples",
-          "slow-travel"
-        ],
+        "best_for": ["art", "waterfront", "temples", "slow-travel"],
         "days_recommended": 2,
-        "tags": [
-          "port",
-          "art urbain",
-          "temples",
-          "sud"
-        ]
+        "tags": ["port", "art urbain", "temples", "sud"]
       }
     },
     {
@@ -120,19 +100,9 @@
           "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
           "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
         ],
-        "best_for": [
-          "nature",
-          "coast",
-          "scenic-train",
-          "road-trip"
-        ],
+        "best_for": ["nature", "coast", "scenic-train", "road-trip"],
         "days_recommended": 2,
-        "tags": [
-          "côte est",
-          "océan",
-          "falaises",
-          "nature"
-        ]
+        "tags": ["côte est", "océan", "falaises", "nature"]
       }
     },
     {
@@ -155,19 +125,9 @@
           "https://images.unsplash.com/photo-1494526585095-c41746248156",
           "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
         ],
-        "best_for": [
-          "history",
-          "food",
-          "temples",
-          "walking"
-        ],
+        "best_for": ["history", "food", "temples", "walking"],
         "days_recommended": 2,
-        "tags": [
-          "histoire",
-          "street food",
-          "temples",
-          "balade"
-        ]
+        "tags": ["histoire", "street food", "temples", "balade"]
       }
     },
     {
@@ -191,19 +151,9 @@
           "https://images.unsplash.com/photo-1493246507139-91e8fad9978e",
           "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
         ],
-        "best_for": [
-          "cafes",
-          "creative-districts",
-          "city-break",
-          "basecamp"
-        ],
+        "best_for": ["cafes", "creative-districts", "city-break", "basecamp"],
         "days_recommended": 2,
-        "tags": [
-          "cafés",
-          "créatif",
-          "marché de nuit",
-          "centre"
-        ]
+        "tags": ["cafés", "créatif", "marché de nuit", "centre"]
       }
     },
     {
@@ -226,19 +176,9 @@
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
           "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
         ],
-        "best_for": [
-          "day-trip",
-          "photography",
-          "tea-houses",
-          "views"
-        ],
+        "best_for": ["day-trip", "photography", "tea-houses", "views"],
         "days_recommended": 1,
-        "tags": [
-          "lanternes",
-          "maisons de thé",
-          "vues",
-          "excursion"
-        ]
+        "tags": ["lanternes", "maisons de thé", "vues", "excursion"]
       }
     },
     {
@@ -261,19 +201,9 @@
           "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
           "https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
         ],
-        "best_for": [
-          "nature",
-          "cycling",
-          "relax",
-          "scenery"
-        ],
+        "best_for": ["nature", "cycling", "relax", "scenery"],
         "days_recommended": 2,
-        "tags": [
-          "lac",
-          "vélo",
-          "nature",
-          "calme"
-        ]
+        "tags": ["lac", "vélo", "nature", "calme"]
       }
     },
     {
@@ -296,19 +226,9 @@
           "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
           "https://images.unsplash.com/photo-1448375240586-882707db888b"
         ],
-        "best_for": [
-          "mountains",
-          "forest",
-          "sunrise",
-          "cooler-weather"
-        ],
+        "best_for": ["mountains", "forest", "sunrise", "cooler-weather"],
         "days_recommended": 2,
-        "tags": [
-          "forêt",
-          "montagne",
-          "lever de soleil",
-          "altitude"
-        ]
+        "tags": ["forêt", "montagne", "lever de soleil", "altitude"]
       }
     },
     {
@@ -331,19 +251,9 @@
           "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
           "https://images.unsplash.com/photo-1493558103817-58b2924bce98"
         ],
-        "best_for": [
-          "beaches",
-          "coast",
-          "sunshine",
-          "road-trip"
-        ],
+        "best_for": ["beaches", "coast", "sunshine", "road-trip"],
         "days_recommended": 2,
-        "tags": [
-          "plages",
-          "sud",
-          "côte",
-          "détente"
-        ]
+        "tags": ["plages", "sud", "côte", "détente"]
       }
     }
   ],

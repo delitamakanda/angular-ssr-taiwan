@@ -4,7 +4,7 @@ import { Destination } from '../models/destination.model';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DestinationDetailStore {
   private readonly api = inject(DestinationsApi);

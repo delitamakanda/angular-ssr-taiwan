@@ -6,7 +6,7 @@ import { mapWpPageWithMedia } from '../../../cms/wordpress/wp-page.mapper';
 import { mapWpMedia } from '../../../cms/wordpress/wp-media.mapper';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PracticalInfoApi {
   private readonly wp = inject(WordpressApiClient);
@@ -14,23 +14,23 @@ export class PracticalInfoApi {
   getAllPages(): Observable<Page[]> {
     return this.wp.getPage().pipe(
       switchMap((items) => {
-      if (items.length === 0) {
-        return [<Page[]>[]];
-      }
-      return forkJoin(
-        items.map((item) => {
-          const mediaId = item.featured_media;
-          if (!mediaId) {
-            return [mapWpPageWithMedia(item)];
-          }
-          return this.wp.getMediaById(mediaId).pipe(
-            map((media) => {
-              return mapWpPageWithMedia(item, mapWpMedia(media));
-            })
-          );
-        })
-      );
-    })
+        if (items.length === 0) {
+          return [<Page[]>[]];
+        }
+        return forkJoin(
+          items.map((item) => {
+            const mediaId = item.featured_media;
+            if (!mediaId) {
+              return [mapWpPageWithMedia(item)];
+            }
+            return this.wp.getMediaById(mediaId).pipe(
+              map((media) => {
+                return mapWpPageWithMedia(item, mapWpMedia(media));
+              }),
+            );
+          }),
+        );
+      }),
     );
   }
 
@@ -49,11 +49,11 @@ export class PracticalInfoApi {
             return this.wp.getMediaById(mediaId).pipe(
               map((media) => {
                 return mapWpPageWithMedia(item, mapWpMedia(media));
-              })
+              }),
             );
-          })
+          }),
         );
-      })
+      }),
     );
   }
 
@@ -71,9 +71,9 @@ export class PracticalInfoApi {
         return this.wp.getMediaById(mediaId).pipe(
           map((media) => {
             return mapWpPageWithMedia(item, mapWpMedia(media));
-          })
+          }),
         );
-      })
-    )
+      }),
+    );
   }
 }

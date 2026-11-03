@@ -14,8 +14,6 @@ export const practicalInfoResolver: ResolveFn<Page | null> = (route) => {
     catchError((error) => {
       router.navigateByUrl('/not-found');
       return of(null);
-    })
-  )
-
-
+    }),
+  );
 };

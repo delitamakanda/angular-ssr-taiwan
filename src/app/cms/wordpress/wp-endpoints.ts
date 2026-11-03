@@ -4,4 +4,4 @@ export const WP_ENDPOINTS = {
   media: '/media',
   pages: '/pages',
   contacts: '/contact',
-}
+};

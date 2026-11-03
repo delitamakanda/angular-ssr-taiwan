@@ -36,7 +36,7 @@ export class DestinationsDetailPageComponent {
 
     effect(() => {
       const item = this.store.item();
-      if(!item) return;
+      if (!item) return;
 
       const description = stripHtml(item.excerpt || item.description);
       this.seo.update({
@@ -44,7 +44,7 @@ export class DestinationsDetailPageComponent {
         description: description,
         image: item.cover_image_url,
         canonical_url: `${SITE_CONFIG.site_url}/destinations/${slug}`,
-      })
+      });
     });
   }
 }

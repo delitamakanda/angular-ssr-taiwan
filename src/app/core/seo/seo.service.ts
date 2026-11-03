@@ -20,7 +20,7 @@ export class SeoService {
     this.meta.updateTag({ name: 'og:url', content: data.canonical_url ?? '' });
     this.meta.updateTag({ name: 'og:type', content: data.type || 'page' });
     this.document.title = data.title;
-    this.setCanonicalUrl(data.canonical_url?? '');
+    this.setCanonicalUrl(data.canonical_url ?? '');
   }
 
   private setCanonicalUrl(url: string): void {

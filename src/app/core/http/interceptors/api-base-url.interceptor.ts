@@ -10,4 +10,4 @@ export const apiBaseUrlInterceptor: HttpInterceptorFn = (req, next) => {
   }
 
   return next(req);
-}
+};

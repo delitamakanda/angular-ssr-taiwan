@@ -11,43 +11,46 @@ server.get('/wp-json/wp/v2/posts', (req, res) => {
   const db = router.db;
   let items = db.get('posts').value();
   if (req.query.slug) {
-    items = items.filter(item => item.slug === req.query.slug);
+    items = items.filter((item) => item.slug === req.query.slug);
   }
   res.jsonp(items);
-})
+});
 
 // destinations
 server.get('/wp-json/wp/v2/destinations', (req, res) => {
   const db = router.db;
   let items = db.get('destinations').value();
   if (req.query.slug) {
-    items = items.filter(item => item.slug === req.query.slug);
+    items = items.filter((item) => item.slug === req.query.slug);
   }
   res.jsonp(items);
-})
+});
 
 //media
 server.get('/wp-json/wp/v2/media/:id', (req, res) => {
   const db = router.db;
-  let items = db.get('media').find({ id: parseInt(req.params.id) }).value();
-  if(!items) {
+  let items = db
+    .get('media')
+    .find({ id: parseInt(req.params.id) })
+    .value();
+  if (!items) {
     return res.status(404).jsonp({ error: 'Not found' });
   }
   res.jsonp(items);
-})
+});
 
 // pages
 server.get('/wp-json/wp/v2/pages', (req, res) => {
   const db = router.db;
   let items = db.get('pages').value();
   if (req.query.slug) {
-    items = items.filter(item => item.slug === req.query.slug);
+    items = items.filter((item) => item.slug === req.query.slug);
   }
   if (req.query.template) {
-    items = items.filter(item => item.template === req.query.template);
+    items = items.filter((item) => item.template === req.query.template);
   }
   res.jsonp(items);
-})
+});
 
 // contact api
 server.post('/wp-json/wp/v2/contact', (req, res) => {
@@ -64,10 +67,9 @@ server.post('/wp-json/wp/v2/contact', (req, res) => {
   db.get('contacts').push(newContact).write();
 
   res.jsonp({ success: true, message: 'Message sent successfully' });
-})
+});
 
 server.use(router);
 server.listen(3000, () => {
   console.log('JSON Server is running on http://localhost:3000');
 });
-

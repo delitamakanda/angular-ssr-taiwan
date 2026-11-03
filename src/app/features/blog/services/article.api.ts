@@ -6,7 +6,7 @@ import { mapWpPostWithMedia } from '../../../cms/wordpress/wp-post.mapper';
 import { mapWpMedia } from '../../../cms/wordpress/wp-media.mapper';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ArticleApi {
   private readonly wp = inject(WordpressApiClient);
@@ -26,12 +26,12 @@ export class ArticleApi {
             return this.wp.getMediaById(mediaId).pipe(
               map((media) => {
                 return mapWpPostWithMedia(item, mapWpMedia(media));
-              })
-            )
-          })
-        )
-      })
-    )
+              }),
+            );
+          }),
+        );
+      }),
+    );
   }
 
   getArticleBySlug(slug: string) {
@@ -45,9 +45,9 @@ export class ArticleApi {
         return this.wp.getMediaById(mediaId).pipe(
           map((media) => {
             return mapWpPostWithMedia(item, mapWpMedia(media));
-          })
-        )
-      })
-    )
+          }),
+        );
+      }),
+    );
   }
 }

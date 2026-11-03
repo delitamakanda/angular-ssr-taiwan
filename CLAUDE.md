@@ -15,7 +15,7 @@ npm run mock:api               # start the local mock WordPress API (see below)
 
 Run a single test file/pattern with Vitest directly, e.g. `npx vitest run src/app/features/blog/state/article.store.spec.ts` or `npx vitest -t "test name"`.
 
-There is no lint script configured; Prettier config lives in `.prettierrc` (100 print width, single quotes, Angular parser for `.html`). `npm run format` / `npm run format:check` run it on the whole repo; the repo is not fully formatted yet, so prefer `bash scripts/agent/format-changed.sh --write` to format only the files you changed.
+There is no lint script configured; Prettier config lives in `.prettierrc` (100 print width, single quotes, Angular parser for `.html`). `npm run format` / `npm run format:check` run it on the whole repo; prefer `bash scripts/agent/format-changed.sh --write` to format only the files you changed.
 
 ### Mock WordPress API
 
