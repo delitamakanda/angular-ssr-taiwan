@@ -1,0 +1,26 @@
+<nav aria-label="Language selection" i18n-aria-label="@@header.lang.label">
+  <ul class="flex flex-wrap gap-1 rounded-full bg-gray-100 p-1 text-sm">
+    @for (locale of locales; track locale.code) {
+      <li>
+        @if (locale.code === currentLocale) {
+          <span
+            aria-current="true"
+            [attr.lang]="locale.lang"
+            class="flex min-h-11 items-center rounded-full bg-blue-700 px-4 font-semibold text-white sm:min-h-9"
+          >
+            {{ locale.label }}
+          </span>
+        } @else {
+          <a
+            [href]="localeHref(locale.code)"
+            [attr.lang]="locale.lang"
+            [attr.hreflang]="locale.lang"
+            class="flex min-h-11 items-center rounded-full px-4 text-gray-900 hover:bg-white hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 sm:min-h-9"
+          >
+            {{ locale.label }}
+          </a>
+        }
+      </li>
+    }
+  </ul>
+</nav>
