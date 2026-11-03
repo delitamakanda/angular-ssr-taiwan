@@ -37,6 +37,48 @@
           <context context-type="linenumber">23,24</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4309667742346075441" datatype="html">
+        <source>Explorez Taïwan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3640298227565825714" datatype="html">
+        <source>Découvrez la culture, l’histoire et les attraits vibrants de Taïwan.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7265777343218010436" datatype="html">
+        <source>Commencer l’exploration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4012206788480145214" datatype="html">
+        <source>Voir toutes les destinations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65183911863183384" datatype="html">
+        <source>Derniers articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3401604967848278816" datatype="html">
+        <source>Voir tous les articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
