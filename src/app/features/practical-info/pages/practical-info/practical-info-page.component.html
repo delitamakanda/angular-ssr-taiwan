@@ -5,6 +5,7 @@
         <img
           [ngSrc]="$safeNavigationMigration(page()?.cover_image_url)!"
           alt="Image"
+          i18n-alt
           class="object-cover w-full h-64"
           [priority]="priority()"
           [lazy]="$safeNavigationMigration(page()?.cover_image_url)!"
@@ -17,6 +18,7 @@
         <img
           ngSrc="https://via.placeholder.com/1920x1080"
           alt="Image"
+          i18n-alt
           class="object-cover w-full h-64"
           [width]="1920"
           [height]="1080"

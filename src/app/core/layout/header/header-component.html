@@ -19,7 +19,11 @@
       }
     </ul>
 
-    <nav class="flex gap-6 text-sm">
+    <nav
+      class="flex gap-6 text-sm"
+      aria-label="Main navigation"
+      i18n-aria-label="@@header.nav.label"
+    >
       <a routerLink="/home" class="hover:text-blue-600" i18n>Home</a>
       <a routerLink="/destinations" class="hover:text-blue-600" i18n>Destinations</a>
       <a routerLink="/blog" class="hover:text-blue-600" i18n>Articles</a>

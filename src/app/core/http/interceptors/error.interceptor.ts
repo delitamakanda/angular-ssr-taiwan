@@ -8,7 +8,7 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
       console.error('Error occurred:', error);
 
       // Return a new Observable with the error response
-      return throwError(() => error.message || 'Server error');
+      return throwError(() => error.message || $localize`:@@error.server:Server error`);
     }),
   );
 };

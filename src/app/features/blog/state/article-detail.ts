@@ -21,8 +21,8 @@ export class ArticleDetailStore {
     try {
       const response = await firstValueFrom(this.api.getArticleBySlug(slug));
       this.article.set(response);
-    } catch {
-      this.error.set('Failed to fetch article. Please try again later.');
+    } catch (error) {
+      this.error.set($localize`:@@error.article.load:Failed to fetch article. Please try again later.`);
     } finally {
       this.loading.set(false);
     }

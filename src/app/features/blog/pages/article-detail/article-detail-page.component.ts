@@ -30,7 +30,7 @@ export class ArticleDetailPageComponent {
   constructor() {
     const slug = this.route.snapshot.paramMap.get('slug');
     if (!slug) {
-      this.store.error.set('No slug provided');
+      this.store.error.set($localize`:@@error.article.noSlug:No slug provided`);
       return;
     }
     void this.store.fetchArticle(slug);

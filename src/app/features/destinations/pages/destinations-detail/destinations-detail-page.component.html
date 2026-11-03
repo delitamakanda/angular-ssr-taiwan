@@ -3,7 +3,7 @@
     routerLink="/destinations"
     class="inline-flex items-center text-sm text-gray-600 hover:text-black"
   >
-    < Retour aux destinations
+    <span i18n>&larr; Back to destinations</span>
   </a>
 
   @if (store.loading()) {
@@ -43,9 +43,11 @@
             </h1>
 
             @if (item.featured) {
-              <span class="rounded-full bg-black px-3 py-1 text-xs font-medium text-white">
-                Incontournable
-              </span>
+              <span
+                class="rounded-full bg-black px-3 py-1 text-xs font-medium text-white"
+                i18n="@@destination.mustSee"
+                >Must-see</span
+              >
             }
           </div>
 
@@ -69,24 +71,30 @@
         </div>
 
         <aside class="space-y-4 rounded-3xl border bg-gray-50 p-6">
-          <h2 class="text-lg font-semibold">Infos rapides</h2>
+          <h2 class="text-lg font-semibold" i18n>Quick info</h2>
 
           <div class="space-y-3 text-sm text-gray-700">
             <div class="flex items-start justify-between gap-4">
-              <span class="text-gray-500">Région</span>
+              <span class="text-gray-500" i18n>Region</span>
               <span class="font-medium">{{ item.region || '—' }}</span>
             </div>
 
             <div class="flex items-start justify-between gap-4">
-              <span class="text-gray-500">Statut</span>
+              <span class="text-gray-500" i18n>Status</span>
               <span class="font-medium">
-                {{ item.featured ? 'À ne pas manquer' : 'À découvrir' }}
+                @if (item.featured) {
+                  <ng-container i18n>Not to be missed</ng-container>
+                } @else {
+                  <ng-container i18n>Worth discovering</ng-container>
+                }
               </span>
             </div>
 
             <div class="flex items-start justify-between gap-4">
-              <span class="text-gray-500">Galerie</span>
-              <span class="font-medium"> {{ item.gallery.length }} image(s) </span>
+              <span class="text-gray-500" i18n>Gallery</span>
+              <span class="font-medium" i18n
+                >{item.gallery.length, plural, =1 {1 image} other {{{ item.gallery.length }} images}}</span
+              >
             </div>
           </div>
         </aside>
@@ -94,7 +102,7 @@
 
       @if (item.gallery.length) {
         <section class="space-y-4">
-          <h2 class="text-2xl font-semibold">Galerie</h2>
+          <h2 class="text-2xl font-semibold" i18n>Gallery</h2>
 
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @for (image of item.gallery; track image) {

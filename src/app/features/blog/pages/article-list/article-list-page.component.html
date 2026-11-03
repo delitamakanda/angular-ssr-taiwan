@@ -3,9 +3,9 @@
     <app-article-hero [title]="'Blog'" />
 
     @if (store.loading()) {
-      <p>loading...</p>
+      <p role="status" i18n>Loading...</p>
     } @else if (!store.articles().length) {
-      <p>No post found.</p>
+      <p i18n>No post found.</p>
     } @else {
       <div class="grid grid-cols-2 gap-4">
         @for (item of store.articles(); track item.id; let i = $index) {

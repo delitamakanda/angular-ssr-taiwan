@@ -4,15 +4,15 @@
       routerLink="/"
       class="inline-flex items-center text-sm text-gray-600 hover:text-black transition"
     >
-      < back to home
+      <span i18n>&larr; Back to home</span>
     </a>
-    <h1 class="text-4xl font-bold tracking-tight">Practical infos</h1>
+    <h1 class="text-4xl font-bold tracking-tight" i18n>Practical info</h1>
   </div>
   <nav class="flex flex-wrap gap-2">
     @if (store.loading()) {
-      <p>Loading...</p>
+      <p role="status" i18n>Loading...</p>
     } @else if (!store.items().length) {
-      <p>No items found.</p>
+      <p i18n>No items found.</p>
     } @else {
       @for (item of store.items(); track item.id) {
         <a
