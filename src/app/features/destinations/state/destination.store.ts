@@ -26,7 +26,12 @@ export class DestinationStore {
     );
   });
 
-  async loadDestinations(): Promise<void> {
+  readonly featuredDestinations = computed(() => {
+    const items = this.items();
+    return [...items.filter(item => item.featured), ...items.filter(item => !item.featured)].slice(0, 3);
+  });
+
+  async loadDestinations() : Promise<void> {
     this.loading.set(true);
     this.error.set(null);
     try {
