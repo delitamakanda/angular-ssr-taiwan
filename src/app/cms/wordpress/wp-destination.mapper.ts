@@ -1,4 +1,4 @@
-import { Destination} from '../../features/destinations/models/destination.model';
+import { Destination } from '../../features/destinations/models/destination.model';
 import { Media } from './wp-media.mapper';
 
 export function mapWpDestinationWithMedia(item: any, media?: Media): Destination {

@@ -24,6 +24,6 @@ export class ArticleListPageComponent {
       title: 'Latest Articles',
       description: 'Discover the latest news articles from around the world.',
       canonical_url: `${SITE_CONFIG.site_url}/blog`,
-    })
+    });
   }
 }

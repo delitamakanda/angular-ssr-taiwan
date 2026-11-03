@@ -79,7 +79,9 @@ export class WordpressApiClient {
   }
 
   getPageBySlug(slug: string): Observable<WpPage[]> {
-    return this.http.get<WpPage[]>(`${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.pages}?slug=${encodeURIComponent(slug)}`,);
+    return this.http.get<WpPage[]>(
+      `${this.config.wordpressApiBaseUrl}${WP_ENDPOINTS.pages}?slug=${encodeURIComponent(slug)}`,
+    );
   }
   getPageByTemplate(template: string): Observable<WpPage[]> {
     return this.http.get<WpPage[]>(

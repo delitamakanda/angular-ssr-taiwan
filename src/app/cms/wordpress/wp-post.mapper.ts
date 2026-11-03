@@ -1,4 +1,4 @@
-import { Article} from '../../features/blog/models/article.model';
+import { Article } from '../../features/blog/models/article.model';
 import { Media } from './wp-media.mapper';
 
 export function mapWpPostWithMedia(item: any, media?: Media): Article {

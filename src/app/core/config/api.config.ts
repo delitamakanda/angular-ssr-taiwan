@@ -5,5 +5,5 @@ export interface ApiConfig {
 }
 
 export const API_CONFIG: ApiConfig = {
-  wordpressApiBaseUrl: environment.wordpressApiUrl
-}
+  wordpressApiBaseUrl: environment.wordpressApiUrl,
+};

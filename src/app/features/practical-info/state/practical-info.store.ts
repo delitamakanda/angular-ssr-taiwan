@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import { PracticalInfoApi } from '../services/practical-info.api';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PracticalInfoStore {
   private readonly api = inject(PracticalInfoApi);

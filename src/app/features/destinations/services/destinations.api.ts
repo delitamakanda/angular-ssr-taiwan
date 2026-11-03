@@ -26,11 +26,11 @@ export class DestinationsApi {
             return this.wp.getMediaById(mediaId).pipe(
               map((media) => {
                 return mapWpDestinationWithMedia(item, mapWpMedia(media));
-              })
+              }),
             );
-          })
+          }),
         );
-      })
+      }),
     );
   }
 
@@ -48,9 +48,9 @@ export class DestinationsApi {
         return this.wp.getMediaById(mediaId).pipe(
           map((media) => {
             return mapWpDestinationWithMedia(item, mapWpMedia(media));
-          })
+          }),
         );
-      })
+      }),
     );
   }
 }

@@ -4,7 +4,7 @@ import { Article } from '../models/article.model';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ArticleStore {
   private readonly api = inject(ArticleApi);
@@ -12,7 +12,7 @@ export class ArticleStore {
   readonly loading = signal<boolean>(false);
   readonly error = signal<string | null>(null);
 
-  async fetchArticles() : Promise<void> {
+  async fetchArticles(): Promise<void> {
     this.loading.set(true);
     this.error.set(null);
 

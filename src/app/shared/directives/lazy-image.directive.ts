@@ -16,14 +16,18 @@ export class LazyImageDirective implements AfterViewInit {
     if (!isPlatformBrowser(this.platformId)) return;
     const imgElement = this.el.nativeElement as HTMLImageElement;
     const imgSrc = this.optimizeImageUrl(this.lazy());
-    imgElement.src = imgSrc || 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw';
-    const obs = new IntersectionObserver((entries, observer) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        imgElement.src = imgSrc;
-        observer.disconnect();
-      }
-    }, { threshold: 0 })
+    imgElement.src =
+      imgSrc || 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw';
+    const obs = new IntersectionObserver(
+      (entries, observer) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          imgElement.src = imgSrc;
+          observer.disconnect();
+        }
+      },
+      { threshold: 0 },
+    );
     obs.observe(imgElement);
   }
 

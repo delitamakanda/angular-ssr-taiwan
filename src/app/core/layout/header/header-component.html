@@ -1,17 +1,21 @@
 <header class="bg-white">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-
     <a routerLink="/" class="text-xl font-bold">
-       {{siteName}}
+      {{ siteName }}
     </a>
 
     <ul class="flex gap-4">
       @for (locale of availableLocales; track locale.code) {
-      <li>
-        <a [href]="localeHref(locale.code)" role="button" [class.underline]="locale.code === currentLocale" class="hover:text-blue-600">
-          {{ locale.label }}
-        </a>
-      </li>
+        <li>
+          <a
+            [href]="localeHref(locale.code)"
+            role="button"
+            [class.underline]="locale.code === currentLocale"
+            class="hover:text-blue-600"
+          >
+            {{ locale.label }}
+          </a>
+        </li>
       }
     </ul>
 
@@ -23,7 +27,6 @@
       <a routerLink="/contact" class="hover:text-blue-600" i18n>Contact</a>
     </nav>
 
-    {{currentLocale}}
-
+    {{ currentLocale }}
   </div>
 </header>
