@@ -19,9 +19,8 @@ export class PracticalInfoLayoutComponent {
   constructor() {
     this.store.loadPages();
     this.seo.update({
-      title: 'Practical Information about Taiwan',
-      description:
-        'Learn about the history, culture, and customs of Taiwan, including its unique customs, festivals, and traditions.',
+      title: $localize`:@@seo.practicalInfo.title:Practical Information about Taiwan`,
+      description: $localize`:@@seo.practicalInfo.description:Learn about the history, culture, and customs of Taiwan, including its unique customs, festivals, and traditions.`,
       canonical_url: `${SITE_CONFIG.site_url}/practical-info`,
     });
   }

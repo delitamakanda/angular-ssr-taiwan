@@ -19,8 +19,8 @@ export class PracticalInfoStore {
     try {
       const response = await firstValueFrom(this.api.getAllPages());
       this.items.set(response);
-    } catch {
-      this.error.set('Failed to load practical information pages. Please try again later.');
+    } catch (error) {
+      this.error.set($localize`:@@error.practicalInfo.load:Failed to load practical information pages. Please try again later.`);
     } finally {
       this.loading.set(false);
     }

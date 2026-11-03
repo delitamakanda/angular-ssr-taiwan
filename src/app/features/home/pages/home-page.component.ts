@@ -29,8 +29,8 @@ export class HomePageComponent {
 
   constructor() {
     this.seo.update({
-      title: 'Taiwan Travel',
-      description: 'Discover Taiwan with our travel blog, guides, and exclusive offers.',
+      title: $localize`:@@seo.home.title:Taiwan Travel`,
+      description: $localize`:@@seo.home.description:Discover Taiwan with our travel blog, guides, and exclusive offers.`,
       canonical_url: `${SITE_CONFIG.site_url}`,
     });
 

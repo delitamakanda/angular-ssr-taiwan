@@ -29,7 +29,7 @@ export class DestinationsDetailPageComponent {
   constructor() {
     const slug = this.route.snapshot.paramMap.get('slug');
     if (!slug) {
-      this.store.error.set('No destination slug provided');
+      this.store.error.set($localize`:@@error.destination.noSlug:No destination slug provided`);
       return;
     }
     void this.store.loadDestination(slug!);

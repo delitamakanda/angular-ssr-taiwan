@@ -21,8 +21,8 @@ export class DestinationsListPageComponent {
   constructor() {
     this.store.loadDestinations();
     this.seo.update({
-      title: 'Discover Our Destinations',
-      description: 'Our diverse range of destinations for you to explore',
+      title: $localize`:@@seo.destinations.title:Discover Our Destinations`,
+      description: $localize`:@@seo.destinations.description:Our diverse range of destinations for you to explore`,
       canonical_url: `${SITE_CONFIG.site_url}/destinations`,
     });
   }

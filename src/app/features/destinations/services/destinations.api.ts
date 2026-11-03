@@ -39,7 +39,7 @@ export class DestinationsApi {
       switchMap((items) => {
         const item = items[0];
         if (!item) {
-          throw new Error('Destination not found');
+          throw new Error($localize`:@@error.destination.notFound:Destination not found`);
         }
         const mediaId = item.featured_media;
         if (!mediaId) {

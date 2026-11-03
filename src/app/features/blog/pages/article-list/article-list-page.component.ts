@@ -21,8 +21,8 @@ export class ArticleListPageComponent {
   constructor() {
     this.store.fetchArticles();
     this.seo.update({
-      title: 'Latest Articles',
-      description: 'Discover the latest news articles from around the world.',
+      title: $localize`:@@seo.blog.title:Latest Articles`,
+      description: $localize`:@@seo.blog.description:Discover the latest news articles from around the world.`,
       canonical_url: `${SITE_CONFIG.site_url}/blog`,
     });
   }

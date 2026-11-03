@@ -26,7 +26,7 @@ export class PracticalInfoPageComponent {
         return;
       }
       this.seo.update({
-        title: page.title || 'Practical Info',
+        title: page.title || $localize`:@@seo.practicalInfoPage.title:Practical Info`,
         description: page?.excerpt,
         canonical_url: `${SITE_CONFIG.site_url}/practical-info/${page.slug}`,
       });

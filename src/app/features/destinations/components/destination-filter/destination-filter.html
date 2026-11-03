@@ -1,7 +1,10 @@
 <div class="py-4">
   <input
     type="text"
-    placeholder="Search for destinations...  "
+    placeholder="Search for destinations..."
+    i18n-placeholder
+    aria-label="Search for destinations..."
+    i18n-aria-label
     class="w-full rounded-xl border px-4 py-3 outline-none focus:ring"
     [value]="search()"
     (input)="updateSearchQuery($event)"
