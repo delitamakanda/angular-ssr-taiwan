@@ -28,10 +28,13 @@ export class DestinationStore {
 
   readonly featuredDestinations = computed(() => {
     const items = this.items();
-    return [...items.filter(item => item.featured), ...items.filter(item => !item.featured)].slice(0, 3);
+    return [
+      ...items.filter((item) => item.featured),
+      ...items.filter((item) => !item.featured),
+    ].slice(0, 3);
   });
 
-  async loadDestinations() : Promise<void> {
+  async loadDestinations(): Promise<void> {
     this.loading.set(true);
     this.error.set(null);
     try {

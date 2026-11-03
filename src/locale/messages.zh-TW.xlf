@@ -37,6 +37,48 @@
           <context context-type="linenumber">23,24</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4309667742346075441" datatype="html">
+        <source>探索台灣</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3640298227565825714" datatype="html">
+        <source>探索台灣充滿活力的文化、歷史與景點。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7265777343218010436" datatype="html">
+        <source>開始探索</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4012206788480145214" datatype="html">
+        <source>查看所有目的地</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65183911863183384" datatype="html">
+        <source>最新文章</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3401604967848278816" datatype="html">
+        <source>查看所有文章</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
