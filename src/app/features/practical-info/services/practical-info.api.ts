@@ -15,7 +15,7 @@ export class PracticalInfoApi {
     return this.wp.getPage().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [<Page[]>[]];
+          return [([] as Page[])];
         }
         return forkJoin(
           items.map((item) => {
@@ -38,7 +38,7 @@ export class PracticalInfoApi {
     return this.wp.getPageByTemplate(templateName).pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [<Page[]>[]];
+          return [([] as Page[])];
         }
         return forkJoin(
           items.map((item) => {
@@ -60,7 +60,7 @@ export class PracticalInfoApi {
   getPageBySlug(slug: string): Observable<Page> {
     return this.wp.getPageBySlug(slug).pipe(
       switchMap((items) => {
-        let item = items[0];
+        const item = items[0];
         if (!item) {
           throw new Error(`Page not found with slug: ${slug}`);
         }
