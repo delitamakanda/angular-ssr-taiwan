@@ -1,6 +1,5 @@
 import { Component, effect, inject, input, ChangeDetectionStrategy } from '@angular/core';
 import { SeoService } from '../../../../core/seo/seo.service';
-import { SITE_CONFIG } from '../../../../core/config/site.config';
 import { Page } from '../../../../core/models/page.model';
 import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive';
 import { NgOptimizedImage } from '@angular/common';
@@ -28,7 +27,7 @@ export class PracticalInfoPageComponent {
       this.seo.update({
         title: page.title || $localize`:@@seo.practicalInfoPage.title:Practical Info`,
         description: page?.excerpt,
-        canonical_url: `${SITE_CONFIG.site_url}/practical-info/${page.slug}`,
+        path: `/practical-info/${page.slug}`,
       });
     });
   }

@@ -4,7 +4,6 @@ import { DestinationDetailStore } from '../../state/destination-detail.store';
 import { StripHtmlPipe } from '../../../../shared/pipes/strip-html.pipe';
 import { SeoService } from '../../../../core/seo/seo.service';
 import { stripHtml } from '../../../../shared/utils/strip-html.util';
-import { SITE_CONFIG } from '../../../../core/config/site.config';
 import { NgOptimizedImage } from '@angular/common';
 import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive';
 
@@ -43,7 +42,7 @@ export class DestinationsDetailPageComponent {
         title: item.name,
         description: description,
         image: item.cover_image_url,
-        canonical_url: `${SITE_CONFIG.site_url}/destinations/${slug}`,
+        path: `/destinations/${slug}`,
       });
     });
   }

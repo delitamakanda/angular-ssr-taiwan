@@ -6,6 +6,8 @@ import {
 } from '@angular/ssr/node';
 import express from 'express';
 import { join } from 'node:path';
+import { API_CONFIG } from './app/core/config/api.config';
+import { buildRobotsTxt, getSitemapXml } from './app/cms/wordpress/wp-sitemap';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
@@ -23,6 +25,16 @@ const angularApp = new AngularNodeAppEngine();
  * });
  * ```
  */
+
+app.get('/robots.txt', (_req, res) => {
+  res.type('text/plain').send(buildRobotsTxt());
+});
+
+app.get('/sitemap.xml', (_req, res, next) => {
+  getSitemapXml(API_CONFIG.wordpressApiBaseUrl)
+    .then((xml) => res.type('application/xml').send(xml))
+    .catch(next);
+});
 
 /**
  * Serve static files from /browser
