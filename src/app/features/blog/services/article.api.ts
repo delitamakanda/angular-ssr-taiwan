@@ -15,7 +15,7 @@ export class ArticleApi {
     return this.wp.getPosts().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [([] as Article[])];
+          return [[] as Article[]];
         }
         return forkJoin(
           items.map((item) => {
