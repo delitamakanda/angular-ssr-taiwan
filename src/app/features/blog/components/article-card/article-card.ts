@@ -14,5 +14,5 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class ArticleCard {
   readonly post = input.required<Article>();
-  priority = input<'high' | 'low'>('low');
+  readonly priority = input<'high' | 'low'>('low');
 }

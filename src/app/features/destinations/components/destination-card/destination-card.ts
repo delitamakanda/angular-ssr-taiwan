@@ -15,5 +15,5 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class DestinationCard {
   readonly destination = input.required<Destination>();
-  priority = input<'high' | 'low'>('low');
+  readonly priority = input<'high' | 'low'>('low');
 }

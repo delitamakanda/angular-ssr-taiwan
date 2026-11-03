@@ -17,7 +17,7 @@ export class PracticalInfoPageComponent {
   private readonly seo = inject(SeoService);
   readonly page = input<Page | null>();
 
-  priority = input<'high' | 'low'>('low');
+  readonly priority = input<'high' | 'low'>('low');
 
   constructor() {
     effect(() => {
