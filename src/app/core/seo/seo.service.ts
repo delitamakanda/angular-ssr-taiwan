@@ -1,4 +1,4 @@
-import { DOCUMENT, Inject, inject, Injectable } from '@angular/core';
+import { DOCUMENT, inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { SeoData } from '../models/seo.model';
 
@@ -9,7 +9,7 @@ export class SeoService {
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);
 
-  constructor(@Inject(DOCUMENT) private readonly document: Document) {}
+  private readonly document = inject(DOCUMENT);
 
   update(data: SeoData): void {
     this.title.setTitle(data.title);

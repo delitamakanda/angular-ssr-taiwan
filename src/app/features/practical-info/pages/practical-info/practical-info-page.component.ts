@@ -6,7 +6,7 @@ import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive'
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-practical-info-page.component',
+  selector: 'app-practical-info-page',
   imports: [NgOptimizedImage, LazyImageDirective],
   standalone: true,
   templateUrl: './practical-info-page.component.html',

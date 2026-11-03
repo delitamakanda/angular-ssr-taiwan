@@ -120,10 +120,10 @@ Le premier lancement manuel importe tout le backlog existant dans le board.
 
 ## Différences avec angular-qrcode-restaurant
 
-- Pas de lint ni de tests e2e dans le dépôt pour l'instant : les vérifications
-  sont `ng test`, `ng build` et Prettier. Les tickets « Outillage » du backlog
-  ajoutent ESLint et Playwright ; une fois mergés, ajouter les étapes
-  correspondantes dans `agent-implement.yml`, `agent-review.yml` et `ci.yml`.
+- Pas de tests e2e dans le dépôt pour l'instant : les vérifications sont
+  `npm run lint`, `ng test`, `ng build` et Prettier. Le ticket « Outillage »
+  Playwright reste à faire ; l'étape `npm run lint` doit encore être ajoutée
+  (par un humain) dans `agent-implement.yml`, `agent-review.yml` et `ci.yml`.
 - Le dépôt n'est pas encore entièrement formaté : `format-changed.sh` ne vérifie
   que ce que l'agent a modifié.
 - L'API de production vit dans un autre dépôt (`taiwan-mock-api`) : quand un

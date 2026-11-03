@@ -3,7 +3,7 @@ import { SeoService } from '../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../core/config/site.config';
 
 @Component({
-  selector: 'app-home-page.component',
+  selector: 'app-home-page',
   imports: [],
   templateUrl: './home-page.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,

@@ -9,7 +9,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { LazyImageDirective } from '@app/shared/directives/lazy-image.directive';
 
 @Component({
-  selector: 'app-destinations-detail-page.component',
+  selector: 'app-destinations-detail-page',
   imports: [RouterLink, StripHtmlPipe, NgOptimizedImage, LazyImageDirective],
   providers: [DestinationDetailStore],
   standalone: true,
