@@ -2,81 +2,540 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="error.server" datatype="html">
+        <source>Server error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/http/interceptors/error.interceptor.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5433093999075799134" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Taiwan Travel — All rights reserved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/footer/footer-component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.label" datatype="html">
+        <source>Main navigation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2821179408673282599" datatype="html">
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
-          <context context-type="linenumber">19,20</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5582528645278437514" datatype="html">
         <source>Destinations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5539833462297888878" datatype="html">
         <source>Articles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">29,30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5177792457884864697" datatype="html">
         <source>Practical info</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.html</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2952534992798777503" datatype="html">
+        <source>← Back to articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-detail/article-detail-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.article.noSlug" datatype="html">
+        <source>No slug provided</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-detail/article-detail-page.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3894950702316166331" datatype="html">
+        <source>Loading...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-list/article-list-page.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4748502454739403492" datatype="html">
+        <source>No post found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-list/article-list-page.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.blog.title" datatype="html">
+        <source>Latest Articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-list/article-list-page.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.blog.description" datatype="html">
+        <source>Discover the latest news articles from around the world.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/pages/article-list/article-list-page.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.article.load" datatype="html">
+        <source>Failed to fetch article. Please try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/state/article-detail.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.articles.load" datatype="html">
+        <source>Failed to fetch articles. Please try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/state/article.store.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7658402240953727096" datatype="html">
+        <source>Name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4444753420973870540" datatype="html">
+        <source>Name is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1280422006859883870" datatype="html">
+        <source>Name should not exceed 50 characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7818881878078942013" datatype="html">
+        <source>Name should have at least 3 characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6631334172623029500" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8602814243662345124" datatype="html">
+        <source>Email is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3174495843910953299" datatype="html">
+        <source>Invalid email format.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2861550198909909571" datatype="html">
+        <source>Subject:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1292968119875230500" datatype="html">
+        <source>Subject is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7592008494443102467" datatype="html">
+        <source>Subject should exceed 10 characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7858060057068625943" datatype="html">
+        <source>Message:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1899029343616498256" datatype="html">
+        <source>Message is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1118027788072351320" datatype="html">
+        <source>Sending...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.form.submit" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">103,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3430107866267483615" datatype="html">
+        <source>Form submitted successfully!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2184930933592738869" datatype="html">
+        <source>An error occurred while submitting the form.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/component/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8525213662266893834" datatype="html">
+        <source>Contact us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/pages/contact-page.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.title" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/pages/contact-page.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.contact.description" datatype="html">
+        <source>Contact our team and get in touch with us for any inquiries, ideas, or opportunities.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/pages/contact-page.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6703947649972852818" datatype="html">
+        <source>Featured</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/components/destination-card/destination-card.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5117307373994679789" datatype="html">
+        <source>Search for destinations...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/components/destination-filter/destination-filter.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/components/destination-filter/destination-filter.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8342439314467103110" datatype="html">
+        <source>← Back to destinations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="destination.mustSee" datatype="html">
+        <source>Must-see</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6647633419357874946" datatype="html">
+        <source>Quick info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">74,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2702200797962830082" datatype="html">
+        <source>Region</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6049100693764429548" datatype="html">
+        <source>Not to be missed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4209876069715263762" datatype="html">
+        <source>Worth discovering</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2181154762165715522" datatype="html">
+        <source>Gallery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">105,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="575110751185327669" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 image} other {<x id="INTERPOLATION"/> images}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.destination.noSlug" datatype="html">
+        <source>No destination slug provided</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-detail/destinations-detail-page.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8532795670976339000" datatype="html">
+        <source>Explore some of Taiwan&apos;s most beautiful destinations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6579312316355854976" datatype="html">
+        <source>No destinations found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.destinations.title" datatype="html">
+        <source>Discover Our Destinations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.destinations.description" datatype="html">
+        <source>Our diverse range of destinations for you to explore</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/pages/destinations-list/destinations-list-page.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.destination.notFound" datatype="html">
+        <source>Destination not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/services/destinations.api.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.destination.load" datatype="html">
+        <source>Failed to load destination. Please try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/state/destination-detail.store.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.destinations.load" datatype="html">
+        <source>Failed to load destinations. Please try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/destinations/state/destination.store.ts</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4309667742346075441" datatype="html">
         <source>Explore Taiwan</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">7,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3640298227565825714" datatype="html">
-        <source>Discover the vibrant culture, history, and attractions of Taiwan.</source>
+        <source> Discover the vibrant culture, history, and attractions of Taiwan. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7265777343218010436" datatype="html">
         <source>Start exploring</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4012206788480145214" datatype="html">
         <source>View all destinations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="65183911863183384" datatype="html">
         <source>Latest articles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3401604967848278816" datatype="html">
         <source>View all articles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/pages/home-page.component.html</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.home.title" datatype="html">
+        <source>Taiwan Travel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.home.description" datatype="html">
+        <source>Discover Taiwan with our travel blog, guides, and exclusive offers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/pages/home-page.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2275328567992347600" datatype="html">
+        <source>Page not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/pages/not-found-page.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4372352591753131487" datatype="html">
+        <source>The page you are looking for does not exist.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/pages/not-found-page.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6801535761978393212" datatype="html">
+        <source>Back to home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/pages/not-found-page.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5281310600968490593" datatype="html">
+        <source>← Back to home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8504585439051982945" datatype="html">
+        <source>No items found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.practicalInfo.title" datatype="html">
+        <source>Practical Information about Taiwan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.practicalInfo.description" datatype="html">
+        <source>Learn about the history, culture, and customs of Taiwan, including its unique customs, festivals, and traditions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/layouts/practical-info-layout.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3012906865384504293" datatype="html">
+        <source>Image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/pages/practical-info/practical-info-page.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/pages/practical-info/practical-info-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seo.practicalInfoPage.title" datatype="html">
+        <source>Practical Info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/pages/practical-info/practical-info-page.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.practicalInfo.load" datatype="html">
+        <source>Failed to load practical information pages. Please try again later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/practical-info/state/practical-info.store.ts</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
     </body>
