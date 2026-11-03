@@ -57,3 +57,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Agentic workflow
+
+Issues are used as specs: a Claude agent refines them into specifications, implements one ticket at a time and opens a pull request for human review, while a GitHub Project board is kept in sync. See [docs/agentic-workflow.md](docs/agentic-workflow.md) for the lifecycle, labels and one-time setup.

@@ -1,0 +1,9 @@
+dist
+coverage
+.angular
+.agent-out
+playwright-report
+test-results
+package-lock.json
+mock-wp-api/package-lock.json
+src/locale/*.xlf

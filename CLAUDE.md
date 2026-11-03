@@ -15,7 +15,7 @@ npm run mock:api               # start the local mock WordPress API (see below)
 
 Run a single test file/pattern with Vitest directly, e.g. `npx vitest run src/app/features/blog/state/article.store.spec.ts` or `npx vitest -t "test name"`.
 
-There is no lint script configured; Prettier config lives in `.prettierrc` (100 print width, single quotes, Angular parser for `.html`).
+There is no lint script configured; Prettier config lives in `.prettierrc` (100 print width, single quotes, Angular parser for `.html`). `npm run format` / `npm run format:check` run it on the whole repo; the repo is not fully formatted yet, so prefer `bash scripts/agent/format-changed.sh --write` to format only the files you changed.
 
 ### Mock WordPress API
 
@@ -28,6 +28,7 @@ Angular 21 app, standalone components, zoneless change detection, SSR via `@angu
 ### CMS integration layer (`src/app/cms/wordpress/`)
 
 All WordPress REST API access is centralized here and must not be called directly from features:
+
 - `wp-api.client.ts` — thin `HttpClient` wrapper (`WordpressApiClient`) with one method per WP endpoint/content type (posts, destinations, pages, media), returning raw `Wp*` interfaces that mirror the WP REST response shape.
 - `wp-endpoints.ts` — endpoint path constants.
 - `wp-*-mapper.ts` — pure functions that convert raw `Wp*` shapes into the app's domain models (e.g. `mapWpDestinationWithMedia` → `Destination`). Featured media is a separate WP entity keyed by ID, so mappers commonly take the raw item plus an already-fetched `Media` object.
@@ -72,3 +73,7 @@ These are enforced conventions for this codebase, not generic advice — follow 
 - `NgOptimizedImage` for static images (not inline base64).
 - External template/style files are referenced relative to the component's `.ts` file.
 - Must pass AXE checks and WCAG AA (focus management, contrast, ARIA).
+
+## Agentic workflow
+
+Issues are specs: a Claude agent (GitHub Actions) refines them, implements one ticket at a time and opens a PR for human review. See `docs/agentic-workflow.md`. Agents must never modify `.github/`.

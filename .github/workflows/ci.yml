@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # Lancé par l'agent sur ses branches (une PR créée avec GITHUB_TOKEN ne déclenche pas `pull_request`).
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test
+        run: npx ng test --watch=false
+
+      - name: Build
+        run: npx ng build
+
+      - name: Format (fichiers modifiés)
+        if: github.ref != 'refs/heads/main'
+        run: bash scripts/agent/format-changed.sh --check
