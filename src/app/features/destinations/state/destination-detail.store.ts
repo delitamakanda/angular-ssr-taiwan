@@ -21,8 +21,10 @@ export class DestinationDetailStore {
     try {
       const response = await firstValueFrom(this.api.getBySlug(slug));
       this.item.set(response);
-    } catch (error) {
-      this.error.set($localize`:@@error.destination.load:Failed to load destination. Please try again later.`);
+    } catch {
+      this.error.set(
+        $localize`:@@error.destination.load:Failed to load destination. Please try again later.`,
+      );
     } finally {
       this.loading.set(false);
     }
