@@ -24,7 +24,7 @@ export class DestinationsDetailPageComponent {
 
   readonly destination = computed(() => this.store.item());
 
-  priority = input<'high' | 'low'>('low');
+  readonly priority = input<'high' | 'low'>('low');
 
   constructor() {
     const slug = this.route.snapshot.paramMap.get('slug');
