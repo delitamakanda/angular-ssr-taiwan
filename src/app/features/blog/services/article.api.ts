@@ -15,7 +15,7 @@ export class ArticleApi {
     return this.wp.getPosts().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [<Article[]>[]];
+          return [([] as Article[])];
         }
         return forkJoin(
           items.map((item) => {
@@ -37,7 +37,7 @@ export class ArticleApi {
   getArticleBySlug(slug: string) {
     return this.wp.getPostBySlug(slug).pipe(
       switchMap((items) => {
-        let item = items[0];
+        const item = items[0];
         const mediaId = item.featured_media;
         if (!mediaId) {
           return [mapWpPostWithMedia(mediaId)];

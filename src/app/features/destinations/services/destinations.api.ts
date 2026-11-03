@@ -15,7 +15,7 @@ export class DestinationsApi {
     return this.wp.getDestinations().pipe(
       switchMap((items) => {
         if (items.length === 0) {
-          return [<Destination[]>[]];
+          return [([] as Destination[])];
         }
         return forkJoin(
           items.map((item) => {
@@ -37,7 +37,7 @@ export class DestinationsApi {
   getBySlug(slug: string) {
     return this.wp.getDestinationBySlug(slug).pipe(
       switchMap((items) => {
-        let item = items[0];
+        const item = items[0];
         if (!item) {
           throw new Error('Destination not found');
         }
