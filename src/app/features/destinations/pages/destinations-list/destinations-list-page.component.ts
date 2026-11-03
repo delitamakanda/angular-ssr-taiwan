@@ -6,7 +6,7 @@ import { SeoService } from '../../../../core/seo/seo.service';
 import { SITE_CONFIG } from '../../../../core/config/site.config';
 
 @Component({
-  selector: 'app-destinations-list-page.component',
+  selector: 'app-destinations-list-page',
   imports: [DestinationCard, DestinationFilter],
   providers: [DestinationStore],
   standalone: true,

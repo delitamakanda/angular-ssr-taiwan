@@ -4,7 +4,7 @@ import { SITE_CONFIG } from '../../../core/config/site.config';
 import { ContactFormComponent } from '../component/contact-form/contact-form.component';
 
 @Component({
-  selector: 'app-contact-page.component',
+  selector: 'app-contact-page',
   imports: [ContactFormComponent],
   templateUrl: './contact-page.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
