@@ -83,6 +83,9 @@
               "extractLicenses": false,
               "sourceMap": true
             },
+            "en-US": {
+              "localize": ["en-US"]
+            },
             "fr-FR": {
               "localize": ["fr-FR"]
             },
