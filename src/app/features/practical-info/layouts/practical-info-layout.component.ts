@@ -9,7 +9,7 @@ import { SITE_CONFIG } from '../../../core/config/site.config';
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
   standalone: true,
   templateUrl: './practical-info-layout.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './practical-info-layout.component.scss',
 })
 export class PracticalInfoLayoutComponent {

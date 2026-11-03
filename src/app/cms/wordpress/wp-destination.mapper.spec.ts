@@ -1,15 +1,17 @@
 import { mapWpDestinationWithMedia } from './wp-destination.mapper';
 import { Media } from './wp-media.mapper';
+import { WpAcf, WpDestination } from './wp-api.client';
 
 const media: Media = { id: 3, url: 'https://cdn/cover.jpg', alt: 'Cover' };
 
-function wpDestination(acf: Record<string, unknown> = {}) {
+function wpDestination(acf: WpAcf = {}): WpDestination {
   return {
     id: 1,
     slug: 'taipei',
     title: { rendered: 'Taipei' },
     excerpt: { rendered: '<p>Capital</p>' },
     content: { rendered: '<p>Long description</p>' },
+    featured_media: 0,
     acf,
   };
 }

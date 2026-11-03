@@ -21,7 +21,7 @@ export class DestinationDetailStore {
     try {
       const response = await firstValueFrom(this.api.getBySlug(slug));
       this.item.set(response);
-    } catch (error) {
+    } catch {
       this.error.set('Failed to load destination. Please try again later');
     } finally {
       this.loading.set(false);

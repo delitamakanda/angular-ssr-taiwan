@@ -177,10 +177,10 @@ jobs:
             --model ${{ vars.AGENT_MODEL || 'sonnet' }}
             --max-turns 130
             --mcp-config .github/agent/mcp.json
-            --allowedTools "Read,Glob,Grep,Write,Edit,Skill,Bash(npx ng test:*),Bash(npx ng build:*),Bash(npx vitest:*),Bash(bash scripts/agent/format-changed.sh:*),Bash(npx prettier:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(ls:*),mcp__playwright"
+            --allowedTools "Read,Glob,Grep,Write,Edit,Skill,Bash(npx ng lint:*),Bash(npx ng test:*),Bash(npx ng build:*),Bash(npx vitest:*),Bash(bash scripts/agent/format-changed.sh:*),Bash(npx prettier:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(ls:*),mcp__playwright"
             --disallowedTools "WebFetch,WebSearch,mcp__playwright__browser_run_code_unsafe,mcp__playwright__browser_evaluate,mcp__playwright__browser_file_upload"
 
-      - name: Vérifications (tests, build, format)
+      - name: Vérifications (lint, tests, build, format)
         id: checks
         if: steps.guard.outputs.skip == 'false'
         run: |
@@ -197,6 +197,7 @@ jobs:
               tail -n 40 ".agent-out/$name.log"
             fi
           }
+          run_check lint npx ng lint
           run_check test npx ng test --watch=false
           run_check build npx ng build
           run_check format bash scripts/agent/format-changed.sh --check

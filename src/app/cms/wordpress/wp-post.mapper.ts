@@ -1,7 +1,8 @@
 import { Article } from '../../features/blog/models/article.model';
 import { Media } from './wp-media.mapper';
+import { WpPost } from './wp-api.client';
 
-export function mapWpPostWithMedia(item: any, media?: Media): Article {
+export function mapWpPostWithMedia(item: WpPost, media?: Media): Article {
   return {
     id: item.id,
     slug: item.slug,

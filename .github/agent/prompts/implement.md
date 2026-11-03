@@ -50,6 +50,7 @@ minimal, lisible et entièrement vérifié.
    - Si le comportement diffère de la spec, corrige le code puis revérifie.
    - Ne navigue que vers l'app locale.
 5. Vérifie, et corrige jusqu'à ce que tout passe :
+   - `npx ng lint`
    - `npx ng test --watch=false`
    - `npx ng build`
    - `bash scripts/agent/format-changed.sh --write` puis

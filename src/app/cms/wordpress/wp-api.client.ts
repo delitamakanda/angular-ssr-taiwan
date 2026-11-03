@@ -9,9 +9,9 @@ export interface WpRenderedField {
 }
 
 export interface WpAcf {
-  region: string;
-  featured: boolean;
-  gallery: string[];
+  region?: string;
+  featured?: boolean;
+  gallery?: string[];
 }
 
 export interface WpPost {
@@ -46,6 +46,7 @@ export interface WpPage {
   excerpt: WpRenderedField;
   content: WpRenderedField;
   featured_media?: number;
+  date?: string;
   template?: string;
 }
 

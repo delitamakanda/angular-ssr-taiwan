@@ -19,7 +19,7 @@ export class ArticleStore {
     try {
       const response = await firstValueFrom(this.api.getAllArticles());
       this.articles.set(response);
-    } catch (error) {
+    } catch {
       this.error.set('Failed to fetch articles. Please try again later.');
     } finally {
       this.loading.set(false);

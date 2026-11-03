@@ -9,7 +9,7 @@ import { NgOptimizedImage } from '@angular/common';
   selector: 'app-article-card',
   imports: [StripHtmlPipe, RouterLink, LazyImageDirective, NgOptimizedImage],
   templateUrl: './article-card.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './article-card.scss',
 })
 export class ArticleCard {

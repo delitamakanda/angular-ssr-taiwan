@@ -21,7 +21,7 @@ export class ArticleApi {
           items.map((item) => {
             const mediaId = item.featured_media;
             if (!mediaId) {
-              return [mapWpPostWithMedia(mediaId)];
+              return [mapWpPostWithMedia(item)];
             }
             return this.wp.getMediaById(mediaId).pipe(
               map((media) => {
@@ -40,7 +40,7 @@ export class ArticleApi {
         const item = items[0];
         const mediaId = item.featured_media;
         if (!mediaId) {
-          return [mapWpPostWithMedia(mediaId)];
+          return [mapWpPostWithMedia(item)];
         }
         return this.wp.getMediaById(mediaId).pipe(
           map((media) => {

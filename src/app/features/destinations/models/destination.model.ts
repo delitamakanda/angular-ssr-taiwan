@@ -6,7 +6,7 @@ export interface Destination {
   description: string;
   cover_image_url?: string;
   gallery: string[];
-  region: string;
+  region?: string;
   featured: boolean;
   published_at?: string;
 }

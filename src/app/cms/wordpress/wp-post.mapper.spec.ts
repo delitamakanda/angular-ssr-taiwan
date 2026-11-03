@@ -1,14 +1,16 @@
 import { mapWpPostWithMedia } from './wp-post.mapper';
 import { Media } from './wp-media.mapper';
+import { WpPost } from './wp-api.client';
 
 const media: Media = { id: 3, url: 'https://cdn/cover.jpg', alt: 'Cover' };
 
-const wpPost = {
+const wpPost: WpPost = {
   id: 10,
   slug: 'hello',
   title: { rendered: 'Hello' },
   excerpt: { rendered: '<p>Short</p>' },
   content: { rendered: '<p>Full</p>' },
+  featured_media: 0,
 };
 
 describe('mapWpPostWithMedia', () => {

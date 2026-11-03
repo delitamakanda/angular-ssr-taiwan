@@ -21,7 +21,7 @@ export class ArticleDetailStore {
     try {
       const response = await firstValueFrom(this.api.getArticleBySlug(slug));
       this.article.set(response);
-    } catch (error) {
+    } catch {
       this.error.set('Failed to fetch article. Please try again later.');
     } finally {
       this.loading.set(false);
