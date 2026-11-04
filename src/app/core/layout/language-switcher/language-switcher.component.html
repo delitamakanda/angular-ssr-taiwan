@@ -15,6 +15,7 @@
             [href]="localeHref(locale.code)"
             [attr.lang]="locale.lang"
             [attr.hreflang]="locale.lang"
+            [attr.aria-label]="switchLabel(locale.label)"
             class="flex min-h-11 items-center rounded-full px-4 text-gray-900 hover:bg-white hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 sm:min-h-9"
           >
             {{ locale.label }}

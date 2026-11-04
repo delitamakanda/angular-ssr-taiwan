@@ -2,22 +2,82 @@
   <div
     class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3"
   >
-    <a routerLink="/" class="text-xl font-bold">
+    <a
+      routerLink="/"
+      class="text-xl font-bold flex min-h-11 items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+    >
       {{ siteName }}
     </a>
 
-    <app-language-switcher />
-
-    <nav
-      class="flex flex-wrap gap-x-6 gap-y-2 text-sm"
-      aria-label="Main navigation"
-      i18n-aria-label="@@header.nav.label"
+    <button
+      #menuButton
+      type="button"
+      class="md:hidden inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-gray-400 px-3 text-sm font-semibold text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+      aria-controls="header-menu"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
     >
-      <a routerLink="/home" class="hover:text-blue-600" i18n>Home</a>
-      <a routerLink="/destinations" class="hover:text-blue-600" i18n>Destinations</a>
-      <a routerLink="/blog" class="hover:text-blue-600" i18n>Articles</a>
-      <a routerLink="/practical-info" class="hover:text-blue-600" i18n>Practical info</a>
-      <a routerLink="/contact" class="hover:text-blue-600" i18n>Contact</a>
-    </nav>
+      @if (menuOpen()) {
+        <span i18n="@@header.menu.close">Close menu</span>
+      } @else {
+        <span i18n="@@header.menu.open">Open menu</span>
+      }
+    </button>
+
+    <div
+      id="header-menu"
+      class="w-full flex-col gap-4 md:flex md:w-auto md:flex-row md:items-center md:gap-6"
+      [class.hidden]="!menuOpen()"
+      [class.flex]="menuOpen()"
+    >
+      <app-language-switcher />
+
+      <nav
+        class="flex flex-col gap-1 text-sm md:flex-row md:flex-wrap md:gap-x-6"
+        aria-label="Main navigation"
+        i18n-aria-label="@@header.nav.label"
+      >
+        <a
+          routerLink="/home"
+          routerLinkActive="font-semibold text-blue-700 underline underline-offset-4"
+          ariaCurrentWhenActive="page"
+          class="flex min-h-11 items-center hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:min-h-0"
+          i18n
+          >Home</a
+        >
+        <a
+          routerLink="/destinations"
+          routerLinkActive="font-semibold text-blue-700 underline underline-offset-4"
+          ariaCurrentWhenActive="page"
+          class="flex min-h-11 items-center hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:min-h-0"
+          i18n
+          >Destinations</a
+        >
+        <a
+          routerLink="/blog"
+          routerLinkActive="font-semibold text-blue-700 underline underline-offset-4"
+          ariaCurrentWhenActive="page"
+          class="flex min-h-11 items-center hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:min-h-0"
+          i18n
+          >Articles</a
+        >
+        <a
+          routerLink="/practical-info"
+          routerLinkActive="font-semibold text-blue-700 underline underline-offset-4"
+          ariaCurrentWhenActive="page"
+          class="flex min-h-11 items-center hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:min-h-0"
+          i18n
+          >Practical info</a
+        >
+        <a
+          routerLink="/contact"
+          routerLinkActive="font-semibold text-blue-700 underline underline-offset-4"
+          ariaCurrentWhenActive="page"
+          class="flex min-h-11 items-center hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 md:min-h-0"
+          i18n
+          >Contact</a
+        >
+      </nav>
+    </div>
   </div>
 </header>
