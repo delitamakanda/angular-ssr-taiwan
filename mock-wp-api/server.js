@@ -7,9 +7,19 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
+// Polylang-style `lang` filter. Accepts `en`, `fr`, `zh` and regional codes
+// such as `zh-TW` (compared on the primary subtag only).
+function filterByLang(items, lang) {
+  if (!lang) {
+    return items;
+  }
+  const primary = (code) => String(code).toLowerCase().split('-')[0];
+  return items.filter((item) => primary(item.lang) === primary(lang));
+}
+
 server.get('/wp-json/wp/v2/posts', (req, res) => {
   const db = router.db;
-  let items = db.get('posts').value();
+  let items = filterByLang(db.get('posts').value(), req.query.lang);
   if (req.query.slug) {
     items = items.filter((item) => item.slug === req.query.slug);
   }
@@ -19,7 +29,7 @@ server.get('/wp-json/wp/v2/posts', (req, res) => {
 // destinations
 server.get('/wp-json/wp/v2/destinations', (req, res) => {
   const db = router.db;
-  let items = db.get('destinations').value();
+  let items = filterByLang(db.get('destinations').value(), req.query.lang);
   if (req.query.slug) {
     items = items.filter((item) => item.slug === req.query.slug);
   }
@@ -42,7 +52,7 @@ server.get('/wp-json/wp/v2/media/:id', (req, res) => {
 // pages
 server.get('/wp-json/wp/v2/pages', (req, res) => {
   const db = router.db;
-  let items = db.get('pages').value();
+  let items = filterByLang(db.get('pages').value(), req.query.lang);
   if (req.query.slug) {
     items = items.filter((item) => item.slug === req.query.slug);
   }

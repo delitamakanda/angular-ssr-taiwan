@@ -2,6 +2,7 @@
   "posts": [
     {
       "id": 1,
+      "lang": "fr",
       "slug": "taiwan-travel-blog",
       "title": {
         "rendered": "Taiwan Travel Blog"
@@ -16,6 +17,7 @@
     },
     {
       "id": 2,
+      "lang": "fr",
       "slug": "7-jours-a-taiwan",
       "title": {
         "rendered": "Idée d’itinéraire : 7 jours à Taïwan"
@@ -30,6 +32,7 @@
     },
     {
       "id": 3,
+      "lang": "fr",
       "slug": "marches-de-nuit-taiwan",
       "title": {
         "rendered": "Marchés de nuit : le guide pour bien manger"
@@ -41,11 +44,102 @@
         "rendered": "<p>Les marchés de nuit sont au cœur de la vie taïwanaise. Venez avec de l’appétit, un peu de monnaie et l’envie de goûter à tout.</p>"
       },
       "featured_media": 6
+    },
+    {
+      "id": 101,
+      "lang": "en",
+      "slug": "taiwan-travel-blog",
+      "title": {
+        "rendered": "Taiwan Travel Blog"
+      },
+      "excerpt": {
+        "rendered": "<p>A demo blog about Taiwan, covering big cities, nature, culture and practical tips.</p>"
+      },
+      "content": {
+        "rendered": "<p>Welcome to this demo blog dedicated to Taiwan. The goal is simple: offer credible, pleasant-to-browse content that is rich enough to test an Angular SSR application with pages, destinations, media and practical sections.</p><p>You will find ideas for cities to explore, travel inspiration and useful information to plan a trip mixing urban modernity, night markets, temples, hikes and spectacular coastlines.</p>"
+      },
+      "featured_media": 10
+    },
+    {
+      "id": 102,
+      "lang": "en",
+      "slug": "7-jours-a-taiwan",
+      "title": {
+        "rendered": "Itinerary idea: 7 days in Taiwan"
+      },
+      "excerpt": {
+        "rendered": "<p>One week to discover Taipei, Taichung, Tainan and Kaohsiung without running around like a headless chicken.</p>"
+      },
+      "content": {
+        "rendered": "<p>For a first visit, a one-week itinerary lets you combine several atmospheres: Taipei for urban energy, Taichung for its creative districts, Tainan for history and food, then Kaohsiung for a more relaxed end of trip between art, waterfront and temples.</p><p>This format works well for a demo because it feeds an editorial page with longer content and links the destinations together.</p>"
+      },
+      "featured_media": 5
+    },
+    {
+      "id": 103,
+      "lang": "en",
+      "slug": "marches-de-nuit-taiwan",
+      "title": {
+        "rendered": "Night markets: the guide to eating well"
+      },
+      "excerpt": {
+        "rendered": "<p>Tapioca pearls, stinky tofu and skewers: our tips for enjoying Taiwanese night markets.</p>"
+      },
+      "content": {
+        "rendered": "<p>Night markets are at the heart of Taiwanese life. Come hungry, with a little cash and the desire to taste everything.</p>"
+      },
+      "featured_media": 6
+    },
+    {
+      "id": 201,
+      "lang": "zh",
+      "slug": "taiwan-travel-blog",
+      "title": {
+        "rendered": "台灣旅遊部落格"
+      },
+      "excerpt": {
+        "rendered": "<p>一個以台灣為主題的示範部落格，涵蓋大城市、自然、文化與實用建議。</p>"
+      },
+      "content": {
+        "rendered": "<p>歡迎來到這個以台灣為主題的示範部落格。目標很簡單：提供可信、易讀且內容足夠豐富的文章，用來測試包含頁面、目的地、媒體與實用資訊的 Angular SSR 應用程式。</p><p>您可以在這裡找到值得探索的城市、旅遊靈感，以及規劃行程的實用資訊，體驗都會的現代感、夜市、廟宇、健行與壯麗的海岸線。</p>"
+      },
+      "featured_media": 10
+    },
+    {
+      "id": 202,
+      "lang": "zh",
+      "slug": "7-jours-a-taiwan",
+      "title": {
+        "rendered": "行程靈感：台灣七日遊"
+      },
+      "excerpt": {
+        "rendered": "<p>一週的時間，從容探索台北、台中、台南與高雄。</p>"
+      },
+      "content": {
+        "rendered": "<p>第一次造訪台灣時，一週的行程可以結合多種氛圍：台北的都市活力、台中的文創街區、台南的歷史與美食，最後在高雄以藝術、海濱與廟宇作結，步調更為悠閒。</p><p>這樣的安排很適合示範用途，因為它能為編輯頁面提供較長的內容，並將各個目的地串連起來。</p>"
+      },
+      "featured_media": 5
+    },
+    {
+      "id": 203,
+      "lang": "zh",
+      "slug": "marches-de-nuit-taiwan",
+      "title": {
+        "rendered": "夜市：吃得好的指南"
+      },
+      "excerpt": {
+        "rendered": "<p>珍珠、臭豆腐與烤串：享受台灣夜市的實用建議。</p>"
+      },
+      "content": {
+        "rendered": "<p>夜市是台灣生活的核心。帶著好胃口、一點零錢，以及想試遍一切的心情前來吧。</p>"
+      },
+      "featured_media": 6
     }
   ],
   "destinations": [
     {
       "id": 10,
+      "lang": "fr",
       "slug": "taipei",
       "title": {
         "rendered": "Taipei"
@@ -71,6 +165,7 @@
     },
     {
       "id": 11,
+      "lang": "fr",
       "slug": "kaohsiung",
       "title": {
         "rendered": "Kaohsiung"
@@ -96,6 +191,7 @@
     },
     {
       "id": 12,
+      "lang": "fr",
       "slug": "hualien",
       "title": {
         "rendered": "Hualien"
@@ -121,6 +217,7 @@
     },
     {
       "id": 13,
+      "lang": "fr",
       "slug": "tainan",
       "title": {
         "rendered": "Tainan"
@@ -146,6 +243,7 @@
     },
     {
       "id": 14,
+      "lang": "fr",
       "slug": "taichung",
       "title": {
         "rendered": "Taichung"
@@ -172,6 +270,7 @@
     },
     {
       "id": 15,
+      "lang": "fr",
       "slug": "jiufen",
       "title": {
         "rendered": "Jiufen"
@@ -197,6 +296,7 @@
     },
     {
       "id": 16,
+      "lang": "fr",
       "slug": "sun-moon-lake",
       "title": {
         "rendered": "Sun Moon Lake"
@@ -222,6 +322,7 @@
     },
     {
       "id": 17,
+      "lang": "fr",
       "slug": "alishan",
       "title": {
         "rendered": "Alishan"
@@ -247,6 +348,7 @@
     },
     {
       "id": 18,
+      "lang": "fr",
       "slug": "kenting",
       "title": {
         "rendered": "Kenting"
@@ -269,11 +371,482 @@
         "days_recommended": 2,
         "tags": ["plages", "sud", "côte", "détente"]
       }
+    },
+    {
+      "id": 110,
+      "lang": "en",
+      "slug": "taipei",
+      "title": {
+        "rendered": "Taipei"
+      },
+      "excerpt": {
+        "rendered": "<p>Taipei blends temples, modern cafés, night markets and mountains reachable by metro.</p>"
+      },
+      "content": {
+        "rendered": "<p>The capital of Taiwan, Taipei is often the ideal gateway for a first trip. The city combines a lively food scene, modern districts, historic temples and quick access to nature. You can go from busy alleys to a hiking trail in no time, which makes it a particularly pleasant destination for an urban getaway.</p><p>Between Taipei 101, the night markets, the Beitou hot springs and the hills of Elephant Mountain, the city offers a good balance of culture, gastronomy and panoramas.</p>"
+      },
+      "featured_media": 1,
+      "acf": {
+        "region": "north",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1652005344332-7c6855835a9a",
+          "https://images.unsplash.com/photo-1528164344705-47542687000d"
+        ],
+        "best_for": ["city-break", "food", "culture", "hiking"],
+        "days_recommended": 3,
+        "tags": ["marchés de nuit", "temples", "cafés", "montagne"]
+      }
+    },
+    {
+      "id": 111,
+      "lang": "en",
+      "slug": "kaohsiung",
+      "title": {
+        "rendered": "Kaohsiung"
+      },
+      "excerpt": {
+        "rendered": "<p>Kaohsiung charms with its harbour, street art, temples and relaxed atmosphere in southern Taiwan.</p>"
+      },
+      "content": {
+        "rendered": "<p>A large city in the south, Kaohsiung has a more relaxed atmosphere than Taipei while remaining dynamic. Its waterfront, art spaces, convenient metro lines and large temples make it a pleasant destination to explore over several days.</p><p>The city is also an excellent base for exploring the south of the island, taking a day trip to Tainan or strolling between the harbour, ferries, nearby islets and urban viewpoints.</p>"
+      },
+      "featured_media": 2,
+      "acf": {
+        "region": "south",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "best_for": ["art", "waterfront", "temples", "slow-travel"],
+        "days_recommended": 2,
+        "tags": ["port", "art urbain", "temples", "sud"]
+      }
+    },
+    {
+      "id": 112,
+      "lang": "en",
+      "slug": "hualien",
+      "title": {
+        "rendered": "Hualien"
+      },
+      "excerpt": {
+        "rendered": "<p>Hualien is a great gateway to the east coast, between mountains, ocean and spectacular landscapes.</p>"
+      },
+      "content": {
+        "rendered": "<p>Located on the east coast, Hualien attracts travellers looking for nature, sea views and a calmer pace. The city itself is pleasant for a stopover, but it is above all its location that makes it valuable in a Taiwan itinerary.</p><p>It lets you discover another side of the island, more open to the Pacific Ocean, with scenic roads, cliffs, impressive viewpoints and a more peaceful atmosphere than the big cities of the west.</p>"
+      },
+      "featured_media": 3,
+      "acf": {
+        "region": "east",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+          "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+        ],
+        "best_for": ["nature", "coast", "scenic-train", "road-trip"],
+        "days_recommended": 2,
+        "tags": ["côte est", "océan", "falaises", "nature"]
+      }
+    },
+    {
+      "id": 113,
+      "lang": "en",
+      "slug": "tainan",
+      "title": {
+        "rendered": "Tainan"
+      },
+      "excerpt": {
+        "rendered": "<p>Tainan is ideal for discovering historic Taiwan, its temples and a particularly renowned food scene.</p>"
+      },
+      "content": {
+        "rendered": "<p>A former capital, Tainan charms with its more traditional atmosphere, alleys, historic buildings and strong culinary culture. The city lends itself to a slow stay, on foot or by bike, with a succession of small eateries, shrines and lively neighbourhoods.</p><p>It is a perfect destination for those who love urban history, street food and cities where you wander rather than tick boxes.</p>"
+      },
+      "featured_media": 4,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1494526585095-c41746248156",
+          "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+        ],
+        "best_for": ["history", "food", "temples", "walking"],
+        "days_recommended": 2,
+        "tags": ["histoire", "street food", "temples", "balade"]
+      }
+    },
+    {
+      "id": 114,
+      "lang": "en",
+      "slug": "taichung",
+      "title": {
+        "rendered": "Taichung"
+      },
+      "excerpt": {
+        "rendered": "<p>Taichung combines creative districts, cafés, night markets and easy escapes in the centre of the island.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taichung is often chosen as a comfortable stop between north and south. The city is known for its cultural spaces, cafés, regenerating districts and a less hurried atmosphere than the capital.</p><p>It is also a good starting point for exploring central Taiwan, with possible excursions to mountain areas or Sun Moon Lake.</p>"
+      },
+      "featured_media": 5,
+      "acf": {
+        "region": "central",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+          "https://images.unsplash.com/photo-1493246507139-91e8fad9978e",
+          "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+        ],
+        "best_for": ["cafes", "creative-districts", "city-break", "basecamp"],
+        "days_recommended": 2,
+        "tags": ["cafés", "créatif", "marché de nuit", "centre"]
+      }
+    },
+    {
+      "id": 115,
+      "lang": "en",
+      "slug": "jiufen",
+      "title": {
+        "rendered": "Jiufen"
+      },
+      "excerpt": {
+        "rendered": "<p>Jiufen is known for its sloping alleys, lanterns, tea houses and sea views.</p>"
+      },
+      "content": {
+        "rendered": "<p>Located north-east of Taipei, Jiufen is often visited as a day trip but deserves to be seen a little more gently. Its hilly terrain, narrow lanes and unique atmosphere make it a very photogenic place, especially in the late afternoon.</p><p>For a demo, Jiufen brings a more compact, almost postcard-like destination, useful to vary the page types between big city and hill village.</p>"
+      },
+      "featured_media": 6,
+      "acf": {
+        "region": "north",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+        ],
+        "best_for": ["day-trip", "photography", "tea-houses", "views"],
+        "days_recommended": 1,
+        "tags": ["lanternes", "maisons de thé", "vues", "excursion"]
+      }
+    },
+    {
+      "id": 116,
+      "lang": "en",
+      "slug": "sun-moon-lake",
+      "title": {
+        "rendered": "Sun Moon Lake"
+      },
+      "excerpt": {
+        "rendered": "<p>Sun Moon Lake offers a nature break appreciated for walks, viewpoints and calmer stays.</p>"
+      },
+      "content": {
+        "rendered": "<p>A popular destination in central Taiwan, Sun Moon Lake charms with its natural setting, lakeside walks, temples and cycling routes. It is an interesting stop to slow down after several days in the city.</p><p>In a demo application, this destination adds a more contemplative register and lets you test content centred on nature and outdoor activities.</p>"
+      },
+      "featured_media": 7,
+      "acf": {
+        "region": "central",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+        ],
+        "best_for": ["nature", "cycling", "relax", "scenery"],
+        "days_recommended": 2,
+        "tags": ["lac", "vélo", "nature", "calme"]
+      }
+    },
+    {
+      "id": 117,
+      "lang": "en",
+      "slug": "alishan",
+      "title": {
+        "rendered": "Alishan"
+      },
+      "excerpt": {
+        "rendered": "<p>Alishan evokes mountain forests, sunrises and a cooler atmosphere at altitude.</p>"
+      },
+      "content": {
+        "rendered": "<p>Alishan is one of the best-known mountain destinations in Taiwan. People come for its forests, walking paths, cooler air and panoramas when the weather allows. The place brings a more alpine dimension to a trip often centred on cities and the coast.</p><p>For a demo, Alishan enriches the visual universe with a greener, mistier destination very different from the big urban centres.</p>"
+      },
+      "featured_media": 8,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b"
+        ],
+        "best_for": ["mountains", "forest", "sunrise", "cooler-weather"],
+        "days_recommended": 2,
+        "tags": ["forêt", "montagne", "lever de soleil", "altitude"]
+      }
+    },
+    {
+      "id": 118,
+      "lang": "en",
+      "slug": "kenting",
+      "title": {
+        "rendered": "Kenting"
+      },
+      "excerpt": {
+        "rendered": "<p>Kenting brings a seaside, tropical and relaxed atmosphere to the far south of the island.</p>"
+      },
+      "content": {
+        "rendered": "<p>In southern Taiwan, Kenting is often associated with beaches, heat, coastal roads and a stronger holiday atmosphere. It is a popular destination for varying an urban itinerary with a few days more open to the sea and landscapes.</p><p>Even in a demo database, it plays its role well as a “sun and sea air” destination, useful to balance the overall content.</p>"
+      },
+      "featured_media": 9,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+          "https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+        ],
+        "best_for": ["beaches", "coast", "sunshine", "road-trip"],
+        "days_recommended": 2,
+        "tags": ["plages", "sud", "côte", "détente"]
+      }
+    },
+    {
+      "id": 210,
+      "lang": "zh",
+      "slug": "taipei",
+      "title": {
+        "rendered": "台北"
+      },
+      "excerpt": {
+        "rendered": "<p>台北融合了廟宇、現代咖啡館、夜市，以及搭乘捷運即可抵達的山林。</p>"
+      },
+      "content": {
+        "rendered": "<p>作為台灣的首都，台北常是首次旅行的理想門戶。這座城市擁有活力十足的美食場景、現代化街區、歷史悠久的廟宇，並能快速親近自然。短時間內就能從熱鬧的巷弄走進健行步道，非常適合都會小旅行。</p><p>從台北 101、夜市、北投溫泉到象山，這座城市在文化、美食與景觀之間取得了良好的平衡。</p>"
+      },
+      "featured_media": 1,
+      "acf": {
+        "region": "north",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1652005344332-7c6855835a9a",
+          "https://images.unsplash.com/photo-1528164344705-47542687000d"
+        ],
+        "best_for": ["city-break", "food", "culture", "hiking"],
+        "days_recommended": 3,
+        "tags": ["marchés de nuit", "temples", "cafés", "montagne"]
+      }
+    },
+    {
+      "id": 211,
+      "lang": "zh",
+      "slug": "kaohsiung",
+      "title": {
+        "rendered": "高雄"
+      },
+      "excerpt": {
+        "rendered": "<p>高雄以港口、街頭藝術、廟宇與台灣南部悠閒的氛圍吸引旅人。</p>"
+      },
+      "content": {
+        "rendered": "<p>作為南部的大城市，高雄比台北更為悠閒，卻依然充滿活力。海濱、藝術空間、便利的捷運路線與宏偉的廟宇，讓它很適合停留數日慢慢探索。</p><p>這座城市也是探索南台灣的絕佳據點，可以前往台南一日遊，或在港口、渡輪、鄰近小島與城市景點之間散步。</p>"
+      },
+      "featured_media": 2,
+      "acf": {
+        "region": "south",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "best_for": ["art", "waterfront", "temples", "slow-travel"],
+        "days_recommended": 2,
+        "tags": ["port", "art urbain", "temples", "sud"]
+      }
+    },
+    {
+      "id": 212,
+      "lang": "zh",
+      "slug": "hualien",
+      "title": {
+        "rendered": "花蓮"
+      },
+      "excerpt": {
+        "rendered": "<p>花蓮是前往東海岸的絕佳門戶，山脈、海洋與壯麗風景盡收眼底。</p>"
+      },
+      "content": {
+        "rendered": "<p>花蓮位於東海岸，吸引渴望親近自然、欣賞海景並享受較慢步調的旅人。城市本身適合短暫停留，但真正讓它在台灣行程中顯得珍貴的，是它的地理位置。</p><p>在這裡可以看見島嶼的另一面：更面向太平洋，擁有景觀公路、懸崖、令人讚嘆的觀景點，氛圍也比西部大都市寧靜。</p>"
+      },
+      "featured_media": 3,
+      "acf": {
+        "region": "east",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+          "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+        ],
+        "best_for": ["nature", "coast", "scenic-train", "road-trip"],
+        "days_recommended": 2,
+        "tags": ["côte est", "océan", "falaises", "nature"]
+      }
+    },
+    {
+      "id": 213,
+      "lang": "zh",
+      "slug": "tainan",
+      "title": {
+        "rendered": "台南"
+      },
+      "excerpt": {
+        "rendered": "<p>台南是探索歷史台灣、廟宇與著名美食的理想之地。</p>"
+      },
+      "content": {
+        "rendered": "<p>身為舊都，台南以更傳統的氛圍、巷弄、歷史建築與濃厚的飲食文化吸引旅人。這座城市適合步行或騎單車慢慢遊覽，沿途有許多小吃店、廟宇與生氣勃勃的街區。</p><p>對於熱愛城市歷史、街頭美食，喜歡閒逛而非打卡的人來說，這裡是完美的目的地。</p>"
+      },
+      "featured_media": 4,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1494526585095-c41746248156",
+          "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+        ],
+        "best_for": ["history", "food", "temples", "walking"],
+        "days_recommended": 2,
+        "tags": ["histoire", "street food", "temples", "balade"]
+      }
+    },
+    {
+      "id": 214,
+      "lang": "zh",
+      "slug": "taichung",
+      "title": {
+        "rendered": "台中"
+      },
+      "excerpt": {
+        "rendered": "<p>台中結合了文創街區、咖啡館、夜市，以及前往島嶼中部的輕鬆小旅行。</p>"
+      },
+      "content": {
+        "rendered": "<p>台中常被選為南北之間舒適的中繼站。這座城市以文化空間、咖啡館、更新中的街區，以及比首都更悠閒的氛圍聞名。</p><p>它也是探索台灣中部的好起點，可前往山區或日月潭等地遊覽。</p>"
+      },
+      "featured_media": 5,
+      "acf": {
+        "region": "central",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+          "https://images.unsplash.com/photo-1493246507139-91e8fad9978e",
+          "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+        ],
+        "best_for": ["cafes", "creative-districts", "city-break", "basecamp"],
+        "days_recommended": 2,
+        "tags": ["cafés", "créatif", "marché de nuit", "centre"]
+      }
+    },
+    {
+      "id": 215,
+      "lang": "zh",
+      "slug": "jiufen",
+      "title": {
+        "rendered": "九份"
+      },
+      "excerpt": {
+        "rendered": "<p>九份以傾斜的巷弄、燈籠、茶館與海景吸引遊客。</p>"
+      },
+      "content": {
+        "rendered": "<p>九份位於台北東北方，常被當作一日遊景點，但值得更從容地細細品味。起伏的地形、狹窄的小巷與獨特的氛圍，讓這裡非常上相，尤其是在傍晚時分。</p><p>作為示範內容，九份提供了一個更小巧、宛如明信片的目的地，有助於在大城市與山城之間豐富頁面類型。</p>"
+      },
+      "featured_media": 6,
+      "acf": {
+        "region": "north",
+        "featured": true,
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+        ],
+        "best_for": ["day-trip", "photography", "tea-houses", "views"],
+        "days_recommended": 1,
+        "tags": ["lanternes", "maisons de thé", "vues", "excursion"]
+      }
+    },
+    {
+      "id": 216,
+      "lang": "zh",
+      "slug": "sun-moon-lake",
+      "title": {
+        "rendered": "日月潭"
+      },
+      "excerpt": {
+        "rendered": "<p>日月潭是親近自然的好去處，適合散步、賞景與更寧靜的旅程。</p>"
+      },
+      "content": {
+        "rendered": "<p>日月潭是台灣中部的熱門景點，以自然景觀、湖畔步道、廟宇與自行車路線吸引旅人。在城市待了幾天之後，這裡是放慢腳步的好地方。</p><p>在示範應用程式中，這個目的地增添了更沉靜的氛圍，也可用來測試以自然與戶外活動為主的內容。</p>"
+      },
+      "featured_media": 7,
+      "acf": {
+        "region": "central",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+        ],
+        "best_for": ["nature", "cycling", "relax", "scenery"],
+        "days_recommended": 2,
+        "tags": ["lac", "vélo", "nature", "calme"]
+      }
+    },
+    {
+      "id": 217,
+      "lang": "zh",
+      "slug": "alishan",
+      "title": {
+        "rendered": "阿里山"
+      },
+      "excerpt": {
+        "rendered": "<p>阿里山讓人聯想到山林、日出，以及高海拔的清涼空氣。</p>"
+      },
+      "content": {
+        "rendered": "<p>阿里山是台灣最知名的山岳景點之一。人們前來欣賞森林、散步步道、清新涼爽的空氣，以及天氣晴朗時的壯闊景色。這裡為常以城市與海岸為主的旅程增添了高山的面向。</p><p>作為示範內容，阿里山以更綠意盎然、雲霧繚繞的景象豐富了視覺世界，與大都會截然不同。</p>"
+      },
+      "featured_media": 8,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b"
+        ],
+        "best_for": ["mountains", "forest", "sunrise", "cooler-weather"],
+        "days_recommended": 2,
+        "tags": ["forêt", "montagne", "lever de soleil", "altitude"]
+      }
+    },
+    {
+      "id": 218,
+      "lang": "zh",
+      "slug": "kenting",
+      "title": {
+        "rendered": "墾丁"
+      },
+      "excerpt": {
+        "rendered": "<p>墾丁為島嶼最南端帶來濱海、熱帶且悠閒的氛圍。</p>"
+      },
+      "content": {
+        "rendered": "<p>墾丁位於台灣南部，常與沙灘、炎熱天氣、濱海公路和濃厚的度假氣息聯想在一起。若想為都會行程增添幾天面向海洋與風景的時光，這裡是很受歡迎的選擇。</p><p>即使在示範資料中，它也很稱職地扮演「陽光與海風」的目的地，有助於平衡整體內容。</p>"
+      },
+      "featured_media": 9,
+      "acf": {
+        "region": "south",
+        "featured": false,
+        "gallery": [
+          "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+          "https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+        ],
+        "best_for": ["beaches", "coast", "sunshine", "road-trip"],
+        "days_recommended": 2,
+        "tags": ["plages", "sud", "côte", "détente"]
+      }
     }
   ],
   "pages": [
     {
       "id": 30,
+      "lang": "fr",
       "slug": "about-taiwan",
       "title": {
         "rendered": "À propos de Taïwan"
@@ -289,6 +862,7 @@
     },
     {
       "id": 31,
+      "lang": "fr",
       "slug": "weather",
       "title": {
         "rendered": "Météo"
@@ -304,6 +878,7 @@
     },
     {
       "id": 32,
+      "lang": "fr",
       "slug": "visa",
       "title": {
         "rendered": "Visa et formalités"
@@ -319,6 +894,7 @@
     },
     {
       "id": 33,
+      "lang": "fr",
       "slug": "transportation",
       "title": {
         "rendered": "Transports"
@@ -334,6 +910,7 @@
     },
     {
       "id": 34,
+      "lang": "fr",
       "slug": "culture",
       "title": {
         "rendered": "Culture"
@@ -349,6 +926,7 @@
     },
     {
       "id": 35,
+      "lang": "fr",
       "slug": "accommodation",
       "title": {
         "rendered": "Hébergement"
@@ -358,6 +936,198 @@
       },
       "content": {
         "rendered": "<p>Le choix de l’hébergement dépend du rythme du voyage et des destinations. Les grandes villes offrent un large éventail d’options, tandis que les zones plus naturelles ou côtières permettent de privilégier des séjours plus calmes. Pour une démo, cette page est surtout utile pour tester des sections éditoriales avec listes, encarts et recommandations.</p>"
+      },
+      "featured_media": 16,
+      "template": "practical-info"
+    },
+    {
+      "id": 130,
+      "lang": "en",
+      "slug": "about-taiwan",
+      "title": {
+        "rendered": "About Taiwan"
+      },
+      "excerpt": {
+        "rendered": "<p>A general introduction to Taiwan: the island, its atmospheres and its main travel landmarks.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taiwan is a destination that combines large modern cities, mountains, coasts, temples, night markets and a very strong food culture. For a demo, it is the perfect playground: visually rich, varied and evocative enough to build a credible editorial site.</p><p>This page serves as a general introduction before going into the details of destinations and practical information.</p>"
+      },
+      "template": "practical-info",
+      "featured_media": 11
+    },
+    {
+      "id": 131,
+      "lang": "en",
+      "slug": "weather",
+      "title": {
+        "rendered": "Weather"
+      },
+      "excerpt": {
+        "rendered": "<p>When to go to Taiwan and what to expect depending on the regions and seasons.</p>"
+      },
+      "content": {
+        "rendered": "<p>The climate varies with the season, altitude and region. The north can be wetter, while the south is often sunnier. Spring and autumn are generally considered good times to travel, with often pleasant temperatures.</p><p>For a demo, this page could eventually host a weather component, a map or a monthly timeline.</p>"
+      },
+      "featured_media": 12,
+      "template": "practical-info"
+    },
+    {
+      "id": 132,
+      "lang": "en",
+      "slug": "visa",
+      "title": {
+        "rendered": "Visa and formalities"
+      },
+      "excerpt": {
+        "rendered": "<p>The basics to check before leaving: passport, formalities and trip preparation.</p>"
+      },
+      "content": {
+        "rendered": "<p>Entry requirements vary depending on nationality and length of stay. It is always recommended to check the official rules before departure, especially regarding passport validity, tourist stays and any supporting documents required.</p><p>In a demo, this page mainly serves as a template for a structured and reassuring practical section.</p>"
+      },
+      "featured_media": 13,
+      "template": "practical-info"
+    },
+    {
+      "id": 133,
+      "lang": "en",
+      "slug": "transportation",
+      "title": {
+        "rendered": "Transportation"
+      },
+      "excerpt": {
+        "rendered": "<p>Getting around Taiwan is relatively easy thanks to trains, the metro, buses and intercity links.</p>"
+      },
+      "content": {
+        "rendered": "<p>Taiwan is easy to travel with a mix of metro in big cities, conventional or high-speed trains between some regions, and buses to complete journeys. In urban centres, transport cards make getting around very smooth.</p><p>This page is ideal for a demo if you want to display tip blocks, icons or an FAQ.</p>"
+      },
+      "featured_media": 14,
+      "template": "practical-info"
+    },
+    {
+      "id": 134,
+      "lang": "en",
+      "slug": "culture",
+      "title": {
+        "rendered": "Culture"
+      },
+      "excerpt": {
+        "rendered": "<p>A page introducing temples, night markets, local customs and the general atmosphere of the trip.</p>"
+      },
+      "content": {
+        "rendered": "<p>Discovering Taiwan also means taking the time to observe its temples, neighbourhood habits, everyday politeness, night markets and the importance of food in social life. Even a short trip gives a glimpse of this cultural richness.</p><p>In a demo application, this page makes it possible to vary editorial formats with more narrative content.</p>"
+      },
+      "featured_media": 15,
+      "template": "practical-info"
+    },
+    {
+      "id": 135,
+      "lang": "en",
+      "slug": "accommodation",
+      "title": {
+        "rendered": "Accommodation"
+      },
+      "excerpt": {
+        "rendered": "<p>Choosing between city hotels, guesthouses, design stays or nature stops depending on your travel style.</p>"
+      },
+      "content": {
+        "rendered": "<p>The choice of accommodation depends on the pace of the trip and the destinations. Big cities offer a wide range of options, while more natural or coastal areas favour calmer stays. For a demo, this page is mostly useful to test editorial sections with lists, callouts and recommendations.</p>"
+      },
+      "featured_media": 16,
+      "template": "practical-info"
+    },
+    {
+      "id": 230,
+      "lang": "zh",
+      "slug": "about-taiwan",
+      "title": {
+        "rendered": "關於台灣"
+      },
+      "excerpt": {
+        "rendered": "<p>台灣概覽：介紹這座島嶼、它的多樣氛圍與主要旅行地標。</p>"
+      },
+      "content": {
+        "rendered": "<p>台灣結合了現代化大城市、山脈、海岸、廟宇、夜市與濃厚的飲食文化。作為示範內容，這裡是絕佳的題材：視覺豐富、多元，且足以建構可信的編輯型網站。</p><p>本頁在深入介紹各目的地與實用資訊之前，作為整體的導覽。</p>"
+      },
+      "template": "practical-info",
+      "featured_media": 11
+    },
+    {
+      "id": 231,
+      "lang": "zh",
+      "slug": "weather",
+      "title": {
+        "rendered": "天氣"
+      },
+      "excerpt": {
+        "rendered": "<p>何時前往台灣最合適，以及各地區與季節的天氣預期。</p>"
+      },
+      "content": {
+        "rendered": "<p>氣候會依季節、海拔與地區而異。北部可能較為潮濕，南部則通常日照較多。春季與秋季普遍是適合旅行的時節，氣溫通常十分宜人。</p><p>作為示範，本頁未來可加入天氣元件、地圖或月份時間軸。</p>"
+      },
+      "featured_media": 12,
+      "template": "practical-info"
+    },
+    {
+      "id": 232,
+      "lang": "zh",
+      "slug": "visa",
+      "title": {
+        "rendered": "簽證與入境手續"
+      },
+      "excerpt": {
+        "rendered": "<p>出發前需確認的基本資訊：護照、入境手續與行程準備。</p>"
+      },
+      "content": {
+        "rendered": "<p>入境條件依國籍與停留時間而異。出發前務必查閱官方規定，特別是護照效期、觀光停留以及可能需要的證明文件。</p><p>在示範中，本頁主要作為結構清晰、令人安心的實用資訊範本。</p>"
+      },
+      "featured_media": 13,
+      "template": "practical-info"
+    },
+    {
+      "id": 233,
+      "lang": "zh",
+      "slug": "transportation",
+      "title": {
+        "rendered": "交通"
+      },
+      "excerpt": {
+        "rendered": "<p>憑藉火車、捷運、公車與城際路線，在台灣移動相對容易。</p>"
+      },
+      "content": {
+        "rendered": "<p>在台灣旅行很方便：大城市有捷運，部分地區之間有一般或高速列車，其餘路程則由公車補足。在都會區，交通卡讓移動十分順暢。</p><p>如果想展示提示區塊、圖示或常見問題，本頁很適合作為示範。</p>"
+      },
+      "featured_media": 14,
+      "template": "practical-info"
+    },
+    {
+      "id": 234,
+      "lang": "zh",
+      "slug": "culture",
+      "title": {
+        "rendered": "文化"
+      },
+      "excerpt": {
+        "rendered": "<p>介紹廟宇、夜市、在地習俗與旅程整體氛圍的頁面。</p>"
+      },
+      "content": {
+        "rendered": "<p>認識台灣，也意味著花時間觀察廟宇、街坊習慣、日常的禮貌、夜市，以及食物在社交生活中的重要性。即使是短暫的旅程，也能一窺這份文化的豐富。</p><p>在示範應用程式中，本頁讓編輯格式能以更具敘事性的內容產生變化。</p>"
+      },
+      "featured_media": 15,
+      "template": "practical-info"
+    },
+    {
+      "id": 235,
+      "lang": "zh",
+      "slug": "accommodation",
+      "title": {
+        "rendered": "住宿"
+      },
+      "excerpt": {
+        "rendered": "<p>依旅行風格，在都會飯店、民宿、設計旅宿或自然景點住宿之間做選擇。</p>"
+      },
+      "content": {
+        "rendered": "<p>住宿的選擇取決於旅行的步調與目的地。大城市提供多樣的選項，而較為自然或沿海的地區則適合更寧靜的停留。作為示範，本頁主要用於測試含有清單、提示框與建議的編輯區塊。</p>"
       },
       "featured_media": 16,
       "template": "practical-info"
