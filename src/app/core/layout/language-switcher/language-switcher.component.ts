@@ -37,6 +37,11 @@ export class LanguageSwitcherComponent {
     return `/${code}${url.startsWith('/') ? url : `/${url}`}`;
   }
 
+  // Accessible name keeps the visible label in it (WCAG 2.5.3 Label in Name).
+  switchLabel(label: string): string {
+    return $localize`:@@header.lang.switchTo:Switch to ${label}:label:`;
+  }
+
   private stripLocalePrefix(url: string): string {
     const stripped = url.replace(this.localePrefixRe, '');
     return stripped === '' || /^[?#]/.test(stripped) ? `/${stripped}` : stripped;

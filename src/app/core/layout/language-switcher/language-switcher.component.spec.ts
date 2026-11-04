@@ -46,6 +46,13 @@ describe('LanguageSwitcherComponent', () => {
     expect(links.map((a) => a.getAttribute('hreflang'))).toEqual(['en', 'zh-TW']);
   });
 
+  it('gives links an accessible name that contains their visible text', async () => {
+    const { el } = await setup('fr-FR');
+    for (const a of Array.from(el.querySelectorAll('a'))) {
+      expect(a.getAttribute('aria-label')).toContain(a.textContent?.trim());
+    }
+  });
+
   it('keeps path, query string and fragment', async () => {
     const { el, navigate } = await setup('fr-FR');
     await navigate('/destinations?page=2#top');

@@ -618,6 +618,38 @@
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="header.menu.open" datatype="html">
+        <source>Open menu</source>
+        <target state="translated">Ouvrir le menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.menu.close" datatype="html">
+        <source>Close menu</source>
+        <target state="translated">Fermer le menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/header/header-component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.skip" datatype="html">
+        <source>Skip to content</source>
+        <target state="translated">Aller au contenu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/shell/app-shell.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.lang.switchTo" datatype="html">
+        <source>Switch to <x id="label" equiv-text="label"/></source>
+        <target state="translated">Passer en <x id="label" equiv-text="label"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/language-switcher/language-switcher.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
