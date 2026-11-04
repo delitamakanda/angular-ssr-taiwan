@@ -38,6 +38,9 @@ export class ArticleApi {
     return this.wp.getPostBySlug(slug).pipe(
       switchMap((items) => {
         const item = items[0];
+        if (!item) {
+          throw new Error(`Article not found with slug: ${slug}`);
+        }
         const mediaId = item.featured_media;
         if (!mediaId) {
           return [mapWpPostWithMedia(item)];
